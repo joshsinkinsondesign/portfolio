@@ -487,8 +487,69 @@ img, video {
 }
 
 /* ============================================
-   CONTACT
+   BRAND & VISUAL DESIGN
    ============================================ */
+.brand-work {
+  border-top: 1px solid var(--border);
+  background: var(--ink);
+  padding-bottom: clamp(48px, 8vw, 88px);
+}
+
+.brand-hero img {
+  width: 100%;
+  display: block;
+  max-height: 420px;
+  object-fit: cover;
+}
+
+.brand-intro {
+  padding-top: clamp(48px, 8vw, 80px);
+  padding-bottom: clamp(32px, 5vw, 56px);
+}
+
+.brand-work .section-tag {
+  color: #A5B4FC;
+}
+
+.brand-intro h2 {
+  font-size: clamp(30px, 4.5vw, 48px);
+  color: #fff;
+  margin-bottom: 20px;
+}
+
+.brand-blurb {
+  color: #C9C9C9;
+  font-size: 17px;
+  max-width: 68ch;
+}
+
+.inline-link {
+  color: #A5B4FC;
+  text-decoration: underline;
+  text-underline-offset: 3px;
+  transition: color 0.15s ease;
+}
+
+.inline-link:hover { color: #fff; }
+
+.brand-plate {
+  max-width: var(--max-width);
+  margin: 0 auto;
+  padding: clamp(20px, 3vw, 32px) var(--gutter) 0;
+}
+
+.brand-plate img {
+  width: 100%;
+  border-radius: 12px;
+}
+
+.plate-caption {
+  font-size: 14px;
+  color: #9A9A9A;
+  margin-top: 14px;
+}
+
+
 .contact {
   padding: clamp(72px, 12vw, 140px) 0;
   border-top: 1px solid var(--border);
