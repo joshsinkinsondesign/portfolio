@@ -354,6 +354,12 @@ img, video {
   gap: 20px;
 }
 
+.case-media.stacked {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
 @media (max-width: 800px) {
   .case-media.two-up { grid-template-columns: 1fr; }
   .case-media.inline { max-width: 100%; }
