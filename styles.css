@@ -177,7 +177,40 @@ img, video {
   flex-shrink: 0;
 }
 
-.eyebrow { margin: 0 0 28px; }
+.pill { margin: 0 0 28px; }
+
+.eyebrow { margin: 0; }
+
+.hero-grid {
+  display: grid;
+  grid-template-columns: 1.3fr 0.9fr;
+  gap: clamp(24px, 5vw, 56px);
+  align-items: center;
+}
+
+.hero-text { min-width: 0; }
+
+.hero-photo {
+  justify-self: end;
+  width: 100%;
+  max-width: 340px;
+}
+
+.hero-photo img {
+  width: 100%;
+  height: auto;
+}
+
+@media (max-width: 800px) {
+  .hero-grid {
+    grid-template-columns: 1fr;
+  }
+  .hero-photo {
+    justify-self: start;
+    max-width: 220px;
+    order: -1;
+  }
+}
 
 .hero-headline {
   font-size: clamp(32px, 5.2vw, 58px);
