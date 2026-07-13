@@ -374,6 +374,35 @@ img, video {
   border: 1px solid var(--border);
 }
 
+.video-wrap {
+  position: relative;
+}
+
+.video-wrap video {
+  display: block;
+}
+
+.video-toggle {
+  position: absolute;
+  bottom: 14px;
+  right: 14px;
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  background: rgba(0,0,0,0.55);
+  border: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  color: #fff;
+  transition: background 0.15s ease;
+}
+
+.video-toggle:hover { background: rgba(0,0,0,0.75); }
+
+.video-toggle svg { fill: currentColor; }
+
 .case-media.inline {
   max-width: calc(var(--max-width) - 2 * var(--gutter) - 120px);
   margin-left: auto;
