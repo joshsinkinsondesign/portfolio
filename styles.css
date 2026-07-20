@@ -537,7 +537,7 @@ img, video {
 }
 
 .brand-work .section-tag {
-  color: #A5B4FC;
+  color: var(--accent);
 }
 
 .brand-intro h2 {
@@ -547,13 +547,13 @@ img, video {
 }
 
 .brand-blurb {
-  color: #C9C9C9;
+  color: #B8B8B8;
   font-size: 17px;
   max-width: 68ch;
 }
 
 .inline-link {
-  color: #A5B4FC;
+  color: var(--accent);
   text-decoration: underline;
   text-underline-offset: 3px;
   transition: color 0.15s ease;
@@ -570,11 +570,12 @@ img, video {
 .brand-plate img {
   width: 100%;
   border-radius: 12px;
+  border: 1px solid rgba(255,255,255,0.08);
 }
 
 .plate-caption {
   font-size: 14px;
-  color: #9A9A9A;
+  color: #8A8A8A;
   margin-top: 14px;
 }
 
