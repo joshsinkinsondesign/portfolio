@@ -515,6 +515,16 @@ img, video {
   .impact-grid { grid-template-columns: 1fr; }
 }
 
+.context-note {
+  font-size: 14.5px;
+  color: var(--muted);
+  font-style: italic;
+  margin-top: 20px;
+  padding-top: 20px;
+  border-top: 1px solid var(--border);
+  max-width: 60ch;
+}
+
 /* ============================================
    BRAND & VISUAL DESIGN
    ============================================ */
