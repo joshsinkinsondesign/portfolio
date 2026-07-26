@@ -183,7 +183,7 @@ img, video {
 
 .hero-grid {
   display: grid;
-  grid-template-columns: 1.3fr 0.9fr;
+  grid-template-columns: 1fr 1fr;
   gap: clamp(24px, 5vw, 56px);
   align-items: center;
 }
@@ -193,7 +193,7 @@ img, video {
 .hero-photo {
   justify-self: end;
   width: 100%;
-  max-width: 340px;
+  max-width: 460px;
 }
 
 .hero-photo img {
@@ -207,7 +207,7 @@ img, video {
   }
   .hero-photo {
     justify-self: start;
-    max-width: 220px;
+    max-width: 280px;
     order: -1;
   }
 }
