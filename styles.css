@@ -215,7 +215,7 @@ img, video {
 .hero-headline {
   font-size: clamp(32px, 5.2vw, 58px);
   line-height: 1.12;
-  max-width: 18ch;
+  max-width: 22ch;
   font-weight: 600;
 }
 
