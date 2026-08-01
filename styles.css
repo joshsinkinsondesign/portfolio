@@ -447,6 +447,8 @@ img, video {
 
 .video-toggle svg { fill: currentColor; }
 
+.video-toggle svg[hidden] { display: none !important; }
+
 .case-media.inline {
   max-width: calc(var(--max-width) - 2 * var(--gutter) - 120px);
   margin-left: auto;
