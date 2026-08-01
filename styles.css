@@ -15,9 +15,10 @@
 
   --font-display: 'Syne', sans-serif;
   --font-ui: 'Archivo', sans-serif;
-  --font-body: 'DM Sans', sans-serif;
+  --font-body: 'Atkinson Hyperlegible', sans-serif;
 
   --radius: 4px;
+  --radius-pill: 100px;
 
   --max-width: 1180px;
   --gutter: clamp(24px, 5vw, 64px);
@@ -44,7 +45,7 @@ body {
   background: var(--bg);
   color: var(--ink);
   font-family: var(--font-body);
-  font-weight: 300;
+  font-weight: 400;
   font-size: 17px;
   line-height: 1.6;
   -webkit-font-smoothing: antialiased;
@@ -95,21 +96,25 @@ img, video {
    ============================================ */
 .site-header {
   position: sticky;
-  top: 0;
+  top: 16px;
   z-index: 100;
-  background: rgba(255,255,255,0.85);
-  backdrop-filter: blur(10px);
-  -webkit-backdrop-filter: blur(10px);
-  border-bottom: 1px solid var(--border);
+  display: flex;
+  justify-content: center;
+  padding: 0 var(--gutter);
 }
 
-.header-inner {
-  max-width: var(--max-width);
-  margin: 0 auto;
-  padding: 18px var(--gutter);
-  display: flex;
+.nav-pill {
+  display: inline-flex;
   align-items: center;
-  justify-content: space-between;
+  gap: 28px;
+  padding: 8px 8px 8px 18px;
+  border-radius: var(--radius-pill);
+  background: oklch(98% 0.004 90 / 0.72);
+  backdrop-filter: blur(14px);
+  -webkit-backdrop-filter: blur(14px);
+  border: 1px solid oklch(85% 0.006 90 / 0.7);
+  box-shadow: 0 4px 24px rgba(0,0,0,0.06);
+  max-width: 100%;
 }
 
 .logo {
@@ -123,8 +128,8 @@ img, video {
 }
 
 .logo-mark {
-  width: 26px;
-  height: 26px;
+  width: 22px;
+  height: 22px;
   color: var(--ink);
 }
 
@@ -142,15 +147,16 @@ img, video {
 
 .main-nav {
   display: flex;
-  gap: 32px;
+  gap: 22px;
 }
 
 .main-nav a {
   font-family: var(--font-ui);
-  font-size: 15px;
+  font-size: 14px;
   font-weight: 500;
   color: var(--ink-soft);
   transition: color 0.15s ease;
+  white-space: nowrap;
 }
 
 .main-nav a:hover { color: var(--ink); }
@@ -160,10 +166,11 @@ img, video {
   font-size: 14px;
   font-weight: 700;
   padding: 9px 18px;
-  border-radius: var(--radius);
+  border-radius: var(--radius-pill);
   background: var(--ink);
   color: #fff;
   transition: background 0.15s ease;
+  white-space: nowrap;
 }
 
 .header-cta:hover { background: var(--accent); }
