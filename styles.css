@@ -545,7 +545,9 @@ img, video {
    ============================================ */
 .brand-work {
   border-top: 1px solid var(--border);
-  background: var(--ink);
+  background: #EFE7D8;
+  color: #3A2E22;
+  font-family: 'Jost', sans-serif;
   padding-bottom: clamp(48px, 8vw, 88px);
 }
 
@@ -562,30 +564,35 @@ img, video {
 }
 
 .brand-work .section-tag {
-  font-family: var(--font-ui);
-  color: var(--accent);
+  font-family: 'Jost', sans-serif;
+  font-weight: 600;
+  color: #B9633B;
 }
 
 .brand-intro h2 {
-  font-size: clamp(30px, 4.5vw, 48px);
-  color: #fff;
+  font-family: 'jeanne-moderno', serif;
+  font-weight: 400;
+  font-size: clamp(32px, 4.8vw, 52px);
+  color: #3F4F3A;
   margin-bottom: 20px;
 }
 
 .brand-blurb {
-  color: #B8B8B8;
+  font-family: 'Jost', sans-serif;
+  font-weight: 300;
+  color: #3A2E22;
   font-size: 17px;
   max-width: 68ch;
 }
 
 .inline-link {
-  color: var(--accent);
+  color: #B9633B;
   text-decoration: underline;
   text-underline-offset: 3px;
   transition: color 0.15s ease;
 }
 
-.inline-link:hover { color: #fff; }
+.inline-link:hover { color: #3F4F3A; }
 
 .brand-plate {
   max-width: var(--max-width);
@@ -596,13 +603,14 @@ img, video {
 .brand-plate img {
   width: 100%;
   border-radius: var(--radius);
-  border: 1px solid rgba(255,255,255,0.08);
+  border: 1px solid rgba(58,46,34,0.15);
 }
 
 .plate-caption {
-  font-family: var(--font-ui);
+  font-family: 'Jost', sans-serif;
+  font-weight: 300;
   font-size: 14px;
-  color: #8A8A8A;
+  color: #6B5842;
   margin-top: 14px;
 }
 
