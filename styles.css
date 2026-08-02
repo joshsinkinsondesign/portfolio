@@ -7,9 +7,9 @@
   --ink: oklch(20% 0.006 90);
   --ink-soft: oklch(45% 0.006 90);
   --muted: oklch(65% 0.006 90);
-  --accent: oklch(52% 0.16 255);
-  --accent-hover: oklch(42% 0.16 255);
-  --accent-soft: oklch(94% 0.03 255);
+  --accent: oklch(40% 0.15 255);
+  --accent-hover: oklch(32% 0.14 255);
+  --accent-soft: oklch(92% 0.03 255);
   --border: oklch(85% 0.006 90);
   --border-strong: oklch(75% 0.006 90);
 
