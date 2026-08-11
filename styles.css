@@ -714,12 +714,11 @@ button:focus-visible {
 .case-card {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  min-height: 420px;
+  min-height: 460px;
   border-bottom: 1px solid var(--border);
   text-decoration: none;
   color: inherit;
   transition: background 0.2s ease;
-  position: relative;
   overflow: hidden;
 }
 
@@ -735,16 +734,12 @@ button:focus-visible {
   background: oklch(91% 0.007 90);
 }
 
-/* Flip image side for every other card */
-.case-card--alt .case-card-media {
-  order: 2;
-}
-.case-card--alt .case-card-body {
-  order: 1;
-}
+.case-card--alt .case-card-media { order: 2; }
+.case-card--alt .case-card-body  { order: 1; }
 
 .case-card-media {
   overflow: hidden;
+  min-height: 300px;
 }
 
 .case-card-media img {
@@ -767,6 +762,7 @@ button:focus-visible {
   justify-content: space-between;
   padding: clamp(32px, 5vw, 56px) clamp(28px, 4vw, 56px);
   gap: 24px;
+  min-width: 0;
 }
 
 .case-card-meta {
@@ -782,10 +778,10 @@ button:focus-visible {
   letter-spacing: 0.1em;
   text-transform: uppercase;
   color: var(--muted);
+  margin: 0;
 }
 
 .case-card-tags {
-  font-family: var(--font-ui);
   display: flex;
   flex-wrap: wrap;
   gap: 8px;
@@ -837,16 +833,14 @@ button:focus-visible {
     grid-template-columns: 1fr;
     min-height: auto;
   }
-  .case-card-media {
-    height: 280px;
-  }
+  .case-card-media { min-height: 260px; height: 260px; }
   .case-card--alt .case-card-media { order: 0; }
-  .case-card--alt .case-card-body { order: 1; }
+  .case-card--alt .case-card-body  { order: 1; }
 }
 
 @media (max-width: 600px) {
-  .case-card-media { height: 220px; }
-  .case-card-body { padding: 24px 20px; }
+  .case-card-media { height: 220px; min-height: 220px; }
+  .case-card-body  { padding: 24px 20px; }
 }
 
 /* ============================================
