@@ -691,3 +691,216 @@ button:focus-visible {
   outline-offset: 3px;
   border-radius: 2px;
 }
+
+/* ============================================
+   WORK INDEX — CASE STUDY CARDS
+   ============================================ */
+.work-index {
+  padding: clamp(32px, 6vw, 64px) 0 0;
+}
+
+.work-index-heading {
+  font-size: clamp(26px, 3.4vw, 38px);
+  max-width: 20ch;
+  margin-bottom: clamp(40px, 6vw, 64px);
+}
+
+.case-cards {
+  display: flex;
+  flex-direction: column;
+  border-top: 1px solid var(--border);
+}
+
+.case-card {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  min-height: 420px;
+  border-bottom: 1px solid var(--border);
+  text-decoration: none;
+  color: inherit;
+  transition: background 0.2s ease;
+  position: relative;
+  overflow: hidden;
+}
+
+.case-card:hover {
+  background: var(--bg-alt);
+}
+
+.case-card--alt {
+  background: var(--bg-alt);
+}
+
+.case-card--alt:hover {
+  background: oklch(91% 0.007 90);
+}
+
+/* Flip image side for every other card */
+.case-card--alt .case-card-media {
+  order: 2;
+}
+.case-card--alt .case-card-body {
+  order: 1;
+}
+
+.case-card-media {
+  overflow: hidden;
+}
+
+.case-card-media img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  transition: transform 0.5s ease;
+  border-radius: 0;
+  border: none;
+}
+
+.case-card:hover .case-card-media img {
+  transform: scale(1.03);
+}
+
+.case-card-body {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: clamp(32px, 5vw, 56px) clamp(28px, 4vw, 56px);
+  gap: 24px;
+}
+
+.case-card-meta {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.case-card-index {
+  font-family: var(--font-ui);
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--muted);
+}
+
+.case-card-tags {
+  font-family: var(--font-ui);
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.case-card-text {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.case-card-title {
+  font-family: var(--font-display);
+  font-size: clamp(26px, 3.2vw, 40px);
+  font-weight: 700;
+  line-height: 1.1;
+  letter-spacing: -0.01em;
+  margin: 0;
+  color: var(--ink);
+}
+
+.case-card-subtitle {
+  font-family: var(--font-body);
+  font-size: 16px;
+  color: var(--ink-soft);
+  line-height: 1.55;
+  max-width: 42ch;
+  margin: 0;
+}
+
+.case-card-cta {
+  font-family: var(--font-ui);
+  font-size: 14px;
+  font-weight: 700;
+  color: var(--accent);
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  transition: gap 0.2s ease;
+}
+
+.case-card:hover .case-card-cta {
+  gap: 10px;
+}
+
+@media (max-width: 900px) {
+  .case-card {
+    grid-template-columns: 1fr;
+    min-height: auto;
+  }
+  .case-card-media {
+    height: 280px;
+  }
+  .case-card--alt .case-card-media { order: 0; }
+  .case-card--alt .case-card-body { order: 1; }
+}
+
+@media (max-width: 600px) {
+  .case-card-media { height: 220px; }
+  .case-card-body { padding: 24px 20px; }
+}
+
+/* ============================================
+   CASE STUDY PAGES — BACK / NEXT NAV
+   ============================================ */
+.cs-back-wrap {
+  padding: clamp(20px, 3vw, 32px) 0 0;
+}
+
+.cs-back {
+  font-family: var(--font-ui);
+  font-size: 14px;
+  font-weight: 700;
+  color: var(--muted);
+  transition: color 0.15s ease;
+  display: inline-block;
+}
+
+.cs-back:hover { color: var(--ink); }
+
+.cs-next-wrap {
+  border-top: 1px solid var(--border);
+  padding: clamp(48px, 8vw, 88px) 0;
+}
+
+.cs-next-label {
+  font-family: var(--font-ui);
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--muted);
+  margin: 0 0 12px;
+}
+
+.cs-next-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 12px;
+  text-decoration: none;
+  transition: gap 0.2s ease;
+}
+
+.cs-next-link:hover { gap: 18px; }
+
+.cs-next-title {
+  font-family: var(--font-display);
+  font-size: clamp(22px, 3.5vw, 36px);
+  font-weight: 700;
+  color: var(--ink);
+}
+
+.cs-next-arrow {
+  font-size: clamp(20px, 3vw, 30px);
+  color: var(--accent);
+  line-height: 1;
+}
