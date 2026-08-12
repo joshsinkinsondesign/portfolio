@@ -876,3 +876,27 @@ button:focus-visible {
   color: var(--accent);
   line-height: 1;
 }
+
+/* ============================================
+   PROTOTYPE CTA
+   ============================================ */
+.prototype-cta {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  font-family: var(--font-ui);
+  font-size: 15px;
+  font-weight: 700;
+  color: #fff;
+  background: var(--accent);
+  padding: 14px 24px;
+  border-radius: var(--radius-pill);
+  margin-top: 8px;
+  transition: background 0.15s ease, gap 0.2s ease;
+  text-decoration: none;
+}
+
+.prototype-cta:hover {
+  background: var(--accent-hover);
+  gap: 12px;
+}
