@@ -2,16 +2,16 @@
    TOKENS
    ============================================ */
 :root {
-  --bg: oklch(98% 0.004 90);
-  --bg-alt: oklch(94% 0.006 90);
-  --ink: oklch(20% 0.006 90);
-  --ink-soft: oklch(45% 0.006 90);
-  --muted: oklch(65% 0.006 90);
-  --accent: oklch(40% 0.15 255);
-  --accent-hover: oklch(32% 0.14 255);
-  --accent-soft: oklch(92% 0.03 255);
-  --border: oklch(85% 0.006 90);
-  --border-strong: oklch(75% 0.006 90);
+  --bg: #111210;
+  --bg-alt: #1c1e1b;
+  --ink: #eeece8;
+  --ink-soft: #8a8880;
+  --muted: #525049;
+  --accent: #c8c6c0;
+  --accent-hover: #eeece8;
+  --accent-soft: #232420;
+  --border: #2a2b27;
+  --border-strong: #3a3b36;
 
   --font-display: 'Sora', sans-serif;
   --font-ui: 'Archivo', sans-serif;
@@ -109,11 +109,11 @@ img, video {
   gap: 28px;
   padding: 8px 8px 8px 18px;
   border-radius: var(--radius-pill);
-  background: oklch(98% 0.004 90 / 0.72);
+  background: rgba(17, 18, 16, 0.82);
   backdrop-filter: blur(14px);
   -webkit-backdrop-filter: blur(14px);
-  border: 1px solid oklch(85% 0.006 90 / 0.7);
-  box-shadow: 0 4px 24px rgba(0,0,0,0.06);
+  border: 1px solid rgba(42, 43, 39, 0.9);
+  box-shadow: 0 4px 24px rgba(0,0,0,0.4);
   max-width: 100%;
 }
 
@@ -168,7 +168,7 @@ img, video {
   padding: 9px 18px;
   border-radius: var(--radius-pill);
   background: var(--ink);
-  color: #fff;
+  color: var(--bg);
   transition: background 0.15s ease;
   white-space: nowrap;
 }
@@ -397,7 +397,7 @@ img, video {
 }
 
 .case-study.alt .tag {
-  background: #fff;
+  background: var(--bg);
 }
 
 .case-media {
@@ -693,66 +693,68 @@ button:focus-visible {
 }
 
 /* ============================================
-   WORK INDEX — CASE STUDY CARDS
+   WORK INDEX — FEATURED HERO + COMPACT ROW
    ============================================ */
-.case-cards-section {
+.work-index {
   border-top: 1px solid var(--border);
+  padding: clamp(40px, 6vw, 72px) 0;
 }
 
-.case-cards {
+.work-index-inner {
+  max-width: var(--max-width);
+  margin: 0 auto;
+  padding: 0 var(--gutter);
   display: flex;
   flex-direction: column;
+  gap: 16px;
 }
 
-.case-card {
+/* --- Featured card (ShutterPlate) --- */
+.work-featured {
   display: grid;
-  grid-template-columns: 1fr 1fr;
-  min-height: 480px;
-  border-bottom: 1px solid var(--border);
+  grid-template-columns: 1.5fr 1fr;
+  border-radius: var(--radius);
+  border: 1px solid var(--border);
+  overflow: hidden;
   text-decoration: none;
   color: inherit;
-  transition: background 0.2s ease;
+  background: var(--bg-alt);
+  transition: background 0.2s ease, border-color 0.2s ease;
+  min-height: 360px;
+}
+
+.work-featured:hover {
+  background: #222420;
+  border-color: var(--border-strong);
+}
+
+.work-featured-img {
   overflow: hidden;
 }
 
-.case-card:nth-child(even) { background: var(--bg-alt); }
-.case-card:nth-child(odd):hover { background: var(--bg-alt); }
-.case-card:nth-child(even):hover { background: oklch(91% 0.007 90); }
-
-/* Flip: even cards have text left, image right */
-.case-card:nth-child(even) .case-card-img { order: 2; }
-.case-card:nth-child(even) .case-card-body { order: 1; }
-
-.case-card-img {
-  overflow: hidden;
-}
-
-.case-card-img img {
+.work-featured-img img {
   width: 100%;
   height: 100%;
   object-fit: cover;
   display: block;
   transition: transform 0.5s ease;
-  border-radius: 0;
-  border: none;
 }
 
-.case-card:hover .case-card-img img {
+.work-featured:hover .work-featured-img img {
   transform: scale(1.03);
 }
 
-.case-card-body {
+.work-featured-body {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  padding: clamp(40px, 6vw, 80px) clamp(36px, 5vw, 80px);
-  gap: 18px;
-  min-width: 0;
+  padding: clamp(32px, 5vw, 56px) clamp(28px, 4vw, 52px);
+  gap: 16px;
 }
 
-.case-card-index {
+.work-featured-index {
   font-family: var(--font-ui);
-  font-size: 12px;
+  font-size: 11px;
   font-weight: 700;
   letter-spacing: 0.1em;
   text-transform: uppercase;
@@ -760,9 +762,9 @@ button:focus-visible {
   margin: 0;
 }
 
-.case-card-title {
+.work-featured-title {
   font-family: var(--font-display);
-  font-size: clamp(28px, 3.5vw, 44px);
+  font-size: clamp(26px, 3vw, 40px);
   font-weight: 700;
   line-height: 1.1;
   letter-spacing: -0.01em;
@@ -771,54 +773,125 @@ button:focus-visible {
   transition: color 0.15s ease;
 }
 
-.case-card:hover .case-card-title { color: var(--accent); }
+.work-featured:hover .work-featured-title { color: var(--accent); }
 
-.case-card-sub {
+.work-featured-sub {
   font-family: var(--font-body);
-  font-size: 17px;
+  font-size: 16px;
   color: var(--ink-soft);
   line-height: 1.55;
-  max-width: 40ch;
+  margin: 0;
+  max-width: 36ch;
+}
+
+/* --- Compact row (Bluumly 01–03) --- */
+.work-compact-row {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 16px;
+}
+
+.work-compact-card {
+  display: flex;
+  flex-direction: column;
+  border-radius: var(--radius);
+  border: 1px solid var(--border);
+  overflow: hidden;
+  text-decoration: none;
+  color: inherit;
+  background: var(--bg-alt);
+  transition: background 0.2s ease, border-color 0.2s ease;
+}
+
+.work-compact-card:hover {
+  background: #222420;
+  border-color: var(--border-strong);
+}
+
+.work-compact-img {
+  height: 180px;
+  overflow: hidden;
+}
+
+.work-compact-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  transition: transform 0.5s ease;
+}
+
+.work-compact-card:hover .work-compact-img img {
+  transform: scale(1.03);
+}
+
+.work-compact-body {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding: 20px 20px 22px;
+}
+
+.work-compact-index {
+  font-family: var(--font-ui);
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--muted);
   margin: 0;
 }
 
+.work-compact-title {
+  font-family: var(--font-display);
+  font-size: clamp(18px, 2vw, 22px);
+  font-weight: 700;
+  line-height: 1.15;
+  letter-spacing: -0.01em;
+  margin: 0;
+  color: var(--ink);
+  transition: color 0.15s ease;
+}
+
+.work-compact-card:hover .work-compact-title { color: var(--accent); }
+
+.work-flagship-badge {
+  display: inline-block;
+  font-family: var(--font-ui);
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: 0.07em;
+  text-transform: uppercase;
+  color: var(--accent);
+  background: var(--accent-soft);
+  border-radius: var(--radius-pill);
+  padding: 3px 10px;
+  align-self: flex-start;
+}
+
+/* shared tags — still used across old + new layouts */
 .case-card-tags {
   display: flex;
   flex-wrap: wrap;
   gap: 8px;
 }
 
-/* "Read case study →" fades in on hover via ::after */
-.case-card-body::after {
-  content: 'Read case study →';
-  font-family: var(--font-ui);
-  font-size: 14px;
-  font-weight: 700;
-  color: var(--accent);
-  opacity: 0;
-  transform: translateX(-6px);
-  transition: opacity 0.2s ease, transform 0.2s ease;
-  display: block;
-  margin-top: 4px;
-}
-
-.case-card:hover .case-card-body::after {
-  opacity: 1;
-  transform: translateX(0);
-}
-
+/* --- Responsive --- */
 @media (max-width: 900px) {
-  .case-card {
+  .work-featured {
     grid-template-columns: 1fr;
     min-height: auto;
   }
-  .case-card-img { height: 260px; order: 0 !important; }
-  .case-card-body { order: 1 !important; }
+  .work-featured-img { height: 260px; }
+  .work-compact-row { grid-template-columns: 1fr; }
+  .work-compact-img { height: 220px; }
 }
 
 @media (max-width: 600px) {
-  .case-card-img { height: 200px; }
-  .case-card-body { padding: 28px 24px; }
+  .work-featured-img { height: 200px; }
+  .work-featured-body { padding: 28px 24px; }
+  .work-compact-img { height: 180px; }
+  .work-compact-body { padding: 18px 18px 20px; }
 }
 
 /* ============================================
@@ -887,7 +960,7 @@ button:focus-visible {
   font-family: var(--font-ui);
   font-size: 15px;
   font-weight: 700;
-  color: #fff;
+  color: var(--bg);
   background: var(--accent);
   padding: 14px 24px;
   border-radius: var(--radius-pill);
