@@ -5,12 +5,26 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>ShutterPlate — Josh Sinkinson</title>
 <meta name="description" content="A concept iOS cooking app that starts with what's in your fridge — ingredient capture, mood-based filtering, and a distraction-free cooking mode.">
+<meta name="theme-color" content="#111210">
+<link rel="canonical" href="https://joshsinkinsondesign.com/shutterplate.html">
+
+<meta property="og:type" content="website">
+<meta property="og:title" content="ShutterPlate — Josh Sinkinson">
+<meta property="og:description" content="A concept iOS cooking app that starts with what's in your fridge — ingredient capture, mood-based filtering, and a distraction-free cooking mode.">
+<meta property="og:image" content="https://joshsinkinsondesign.com/assets/images/heroimageforshutterplate.png">
+<meta property="og:url" content="https://joshsinkinsondesign.com/shutterplate.html">
+
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="ShutterPlate — Josh Sinkinson">
+<meta name="twitter:description" content="A concept iOS cooking app that starts with what's in your fridge — ingredient capture, mood-based filtering, and a distraction-free cooking mode.">
+<meta name="twitter:image" content="https://joshsinkinsondesign.com/assets/images/heroimageforshutterplate.png">
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;500;600;700;800&family=Atkinson+Hyperlegible:ital,wght@0,400;0,700;1,400;1,700&family=Sora:wght@600;700&family=Jost:wght@300;400;500;600&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;500;600;700;800&family=Atkinson+Hyperlegible:ital,wght@0,400;0,700;1,400;1,700&family=Sora:wght@600;700&family=Jost:wght@300;400;500;600&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="https://use.typekit.net/wvj4qfc.css">
 <link rel="icon" type="image/svg+xml" href="favicon.svg">
+<link rel="apple-touch-icon" href="assets/images/favicon-180.png">
 <link rel="stylesheet" href="styles.css">
 </head>
 <body>
@@ -28,8 +42,19 @@
       <a href="index.html#about">About</a>
       <a href="index.html#contact">Contact</a>
     </nav>
+    <button type="button" class="nav-toggle" aria-label="Open menu" aria-expanded="false" aria-controls="mobile-nav">
+      <span class="nav-toggle-bar"></span>
+      <span class="nav-toggle-bar"></span>
+      <span class="nav-toggle-bar"></span>
+    </button>
     <a href="index.html#contact" class="header-cta">Let's talk</a>
   </div>
+  <nav class="mobile-nav" id="mobile-nav" aria-label="Primary mobile" hidden>
+    <a href="index.html#work">Work</a>
+    <a href="index.html#brand-work">Brand &amp; Visual Design</a>
+    <a href="index.html#about">About</a>
+    <a href="index.html#contact">Contact</a>
+  </nav>
 </header>
 
 <main>
@@ -44,7 +69,7 @@
     <div class="case-hero">
       <div class="case-hero-inner">
         <p class="case-index">Concept Project — iOS App</p>
-        <h2 class="case-title">ShutterPlate</h2>
+        <h1 class="case-title">ShutterPlate</h1>
         <p class="case-subtitle">A step-by-step cooking app that starts with what's already in your fridge — concept through interactive Figma prototype.</p>
         <div class="case-tags">
           <span class="tag">iOS</span>
@@ -63,7 +88,7 @@
     <div class="case-body">
 
       <div class="case-row">
-        <p class="case-row-label">Overview</p>
+        <h2 class="case-row-label">Overview</h2>
         <div class="case-row-content">
           <p>ShutterPlate is a step-by-step cooking app that starts with what's already in your fridge. You photograph your ingredients, the app identifies them, you pick a mood or vibe for how you want to eat, and it surfaces recipes that adapt to your servings and the equipment you actually own. Cooking happens in a distraction-free, one-step-at-a-time mode that pairs short video clips with clear instructions.</p>
           <p>The goal was a product that earns a place on your home screen — not by being clever, but by being genuinely useful every time you cook.</p>
@@ -71,7 +96,7 @@
       </div>
 
       <div class="case-row">
-        <p class="case-row-label">The Problem</p>
+        <h2 class="case-row-label">The Problem</h2>
         <div class="case-row-content">
           <p>Recipe apps have a paradox: they're built for people who already know what they want to cook. Browse any major app and the first question they ask you is a cuisine, a dish name, or a search term. But the most common real-world scenario is different — you have some chicken thighs, half a can of coconut milk, and a lime. You don't know what you're making yet.</p>
           <p>At the same time, cooking apps tend to abandon you mid-cook. They show you a list of steps, maybe a photo at the top, and expect you to context-switch between the recipe and your stovetop. The steps-in-a-list format is a print convention transplanted onto a touchscreen without rethinking it.</p>
@@ -80,7 +105,7 @@
       </div>
 
       <div class="case-row">
-        <p class="case-row-label">Goals</p>
+        <h2 class="case-row-label">Goals</h2>
         <div class="case-row-content">
           <p>Make ingredient-first cooking the default entry point, not a feature buried in search filters. Replace cuisine-based filtering — which requires you to already know what you want — with mood and vibe-based selection. Build a cooking mode that earns its own screen: full focus, one step at a time. And create a brand that feels warm and approachable without feeling rustic or low-fi.</p>
         </div>
@@ -96,7 +121,7 @@
     <div class="case-body">
 
       <div class="case-row">
-        <p class="case-row-label">Key Design Decisions</p>
+        <h2 class="case-row-label">Key Design Decisions</h2>
         <div class="case-row-content">
           <p class="pull-quote">Mood over taxonomy. Appetite over category.</p>
           <p>The typical recipe filter pattern asks: what cuisine do you want? That's the wrong question when you're staring at a pile of ingredients. Cuisine taxonomies are also imprecise — is a coconut curry Thai or Indian? Does it matter?</p>
@@ -105,7 +130,7 @@
       </div>
 
       <div class="case-row">
-        <p class="case-row-label">The Camera as Home</p>
+        <h2 class="case-row-label">The Camera as Home</h2>
         <div class="case-row-content">
           <p>Most recipe apps open to a social feed or a curated homepage. ShutterPlate's home screen is built around taking action: the primary CTA is scanning ingredients. Everything else — saved recipes, account, recent history — is secondary.</p>
           <p>The camera UI follows native iOS conventions closely, because familiarity reduces friction at the moment of first intent. Two flows handle both states explicitly: Ingredient Found continues the flow, and Ingredient Not Found shows a likely-match list with a retry option — making the fallback a designed experience rather than a dead end.</p>
@@ -113,7 +138,7 @@
       </div>
 
       <div class="case-row">
-        <p class="case-row-label">Onboarding</p>
+        <h2 class="case-row-label">Onboarding</h2>
         <div class="case-row-content">
           <p>The onboarding sequence collects three things: skill level, cookware and equipment, and allergies. The first two are skippable — they improve results but aren't required. Allergies are mandatory with no skip option, because surfacing a recipe containing a severe allergen would be genuinely harmful.</p>
           <p>The disclaimer copy on the allergy step is intentionally muted — it doesn't shout, it just clarifies. The goal was to communicate seriousness without creating alarm, and to be transparent that this data shapes what you see. Getting that right builds trust at the moment users are most skeptical.</p>
@@ -130,7 +155,7 @@
     <div class="case-body">
 
       <div class="case-row">
-        <p class="case-row-label">Card Design</p>
+        <h2 class="case-row-label">Card Design</h2>
         <div class="case-row-content">
           <p>In the recipe list, cards show prep time and cook time — the two things people actually use to choose. Author attribution moved to the recipe detail page. This keeps the list scannable and removes a piece of information that doesn't help someone decide whether a recipe fits their evening.</p>
           <p>It's a small call, but it reflects a broader principle: every element on a card earns its place by helping someone decide. Everything else is noise.</p>
@@ -138,7 +163,7 @@
       </div>
 
       <div class="case-row">
-        <p class="case-row-label">Cooking Mode</p>
+        <h2 class="case-row-label">Cooking Mode</h2>
         <div class="case-row-content">
           <p>Step-by-step cooking modes are common in recipe apps, but often feel bolted on. ShutterPlate's Cooking Mode is full-screen and focus-only. Each step shows exactly one instruction, the relevant ingredient chips for that step, and a short video clip. There's no recipe list visible, no navigation chrome, and no way to accidentally leave.</p>
           <p>The progress bar and step counter orient you within the recipe without cluttering the step itself. A persistent Exit link returns you to Recipe Details if you need to look something up, and a Finish Cooking CTA on the final step triggers the Cook Complete flow — a 5-star rating and the option to save the recipe to your library.</p>
@@ -150,7 +175,7 @@
     <!-- Flow diagram — two parts -->
     <div class="case-body">
       <div class="case-row">
-        <p class="case-row-label">User Flow</p>
+        <h2 class="case-row-label">User Flow</h2>
         <div class="case-row-content">
           <p>The full flow was mapped end-to-end with edge cases built in from the start — not retrofitted after the fact. Two gaps found during a prototype audit (the Cooking Mode screens and the Ingredient Not Found branch) were fully wired before the prototype was considered complete.</p>
         </div>
@@ -168,7 +193,7 @@
     <!-- Prototype CTA -->
     <div class="case-body">
       <div class="case-row">
-        <p class="case-row-label">Prototype</p>
+        <h2 class="case-row-label">Prototype</h2>
         <div class="case-row-content">
           <p>The Figma prototype is fully wired end-to-end — splash through Cook Complete — with zero broken links. Click through the full flow yourself below.</p>
           <a href="https://www.figma.com/proto/kI2lJjA59Ihf7NMU24T0b0/Shutterplate?node-id=217-2373&viewport=634%2C365%2C0.08&t=ZkfuTYTGkHBlKFEO-1&scaling=scale-down&content-scaling=fixed&starting-point-node-id=217%3A2373&page-id=0%3A1" target="_blank" rel="noopener" class="prototype-cta">Try the prototype →</a>
@@ -176,7 +201,7 @@
       </div>
 
       <div class="case-row">
-        <p class="case-row-label">What I Learned</p>
+        <h2 class="case-row-label">What I Learned</h2>
         <div class="case-row-content">
           <p><strong>Audit your own prototype like a tester, not a designer.</strong> The cooking mode — the app's most distinctive feature — wasn't wired until an audit caught it. Walking every path as a first-time user surfaces gaps that the creator's mental model papers over.</p>
           <p><strong>Mood-based selection is hard to validate without real users.</strong> The 12-tile flavor system is a strong hypothesis, but the right vibe labels, tile count, and whether selections should be single or multi-choose are all open questions. That's the first thing I'd test in user research.</p>
@@ -186,6 +211,17 @@
 
     </div>
   </article>
+
+  <!-- NEXT CASE STUDY -->
+  <div class="cs-next-wrap">
+    <div class="section-inner">
+      <p class="cs-next-label">Next case study</p>
+      <a href="signup-flow.html" class="cs-next-link">
+        <span class="cs-next-title">Signup Flow</span>
+        <span class="cs-next-arrow">→</span>
+      </a>
+    </div>
+  </div>
 
 </main>
 

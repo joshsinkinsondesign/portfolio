@@ -5,12 +5,26 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Campaign Creator — Josh Sinkinson</title>
 <meta name="description" content="Designing Bluumly's flagship feature — turning products or any web page into a ready-to-publish social campaign.">
+<meta name="theme-color" content="#111210">
+<link rel="canonical" href="https://joshsinkinsondesign.com/campaign-creator.html">
+
+<meta property="og:type" content="website">
+<meta property="og:title" content="Campaign Creator — Josh Sinkinson">
+<meta property="og:description" content="Designing Bluumly's flagship feature — turning products or any web page into a ready-to-publish social campaign.">
+<meta property="og:image" content="https://joshsinkinsondesign.com/assets/images/createacampaign.png">
+<meta property="og:url" content="https://joshsinkinsondesign.com/campaign-creator.html">
+
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Campaign Creator — Josh Sinkinson">
+<meta name="twitter:description" content="Designing Bluumly's flagship feature — turning products or any web page into a ready-to-publish social campaign.">
+<meta name="twitter:image" content="https://joshsinkinsondesign.com/assets/images/createacampaign.png">
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;500;600;700;800&family=Atkinson+Hyperlegible:ital,wght@0,400;0,700;1,400;1,700&family=Sora:wght@600;700&family=Jost:wght@300;400;500;600&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;500;600;700;800&family=Atkinson+Hyperlegible:ital,wght@0,400;0,700;1,400;1,700&family=Sora:wght@600;700&family=Jost:wght@300;400;500;600&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="https://use.typekit.net/wvj4qfc.css">
 <link rel="icon" type="image/svg+xml" href="favicon.svg">
+<link rel="apple-touch-icon" href="assets/images/favicon-180.png">
 <link rel="stylesheet" href="styles.css">
 </head>
 <body>
@@ -28,8 +42,19 @@
       <a href="index.html#about">About</a>
       <a href="index.html#contact">Contact</a>
     </nav>
+    <button type="button" class="nav-toggle" aria-label="Open menu" aria-expanded="false" aria-controls="mobile-nav">
+      <span class="nav-toggle-bar"></span>
+      <span class="nav-toggle-bar"></span>
+      <span class="nav-toggle-bar"></span>
+    </button>
     <a href="index.html#contact" class="header-cta">Let's talk</a>
   </div>
+  <nav class="mobile-nav" id="mobile-nav" aria-label="Primary mobile" hidden>
+    <a href="index.html#work">Work</a>
+    <a href="index.html#brand-work">Brand &amp; Visual Design</a>
+    <a href="index.html#about">About</a>
+    <a href="index.html#contact">Contact</a>
+  </nav>
 </header>
 
 <main>
@@ -44,7 +69,7 @@
     <div class="case-hero">
       <div class="case-hero-inner">
         <p class="case-index">Case Study 02</p>
-        <h2 class="case-title">Campaign Creator</h2>
+        <h1 class="case-title">Campaign Creator</h1>
         <p class="case-subtitle">Designing Bluumly's flagship feature — turning products or any web page into a ready-to-publish social campaign.</p>
         <div class="case-tags">
           <span class="tag">AI Content Generation</span>
@@ -60,14 +85,14 @@
 
     <div class="case-body">
       <div class="case-row">
-        <p class="case-row-label">Overview</p>
+        <h2 class="case-row-label">Overview</h2>
         <div class="case-row-content">
           <p>At Bluumly, I designed our flagship feature: the Social Media Campaign Creator. It let Shopify merchants turn products — or content sourced from any web URL — into ready-to-publish social campaigns across six platforms, without needing a content team or a design background.</p>
         </div>
       </div>
 
       <div class="case-row">
-        <p class="case-row-label">The Challenge</p>
+        <h2 class="case-row-label">The Challenge</h2>
         <div class="case-row-content">
           <p>Campaign creation required a genuinely large amount of setup — product source, audience, goal, timing, platform selection, and content generation all had to happen before a single post existed. The risk was obvious: too much configuration up front, and users would abandon before ever seeing value. The challenge was making a necessarily complex process feel quick and painless.</p>
         </div>
@@ -78,7 +103,7 @@
       </div>
 
       <div class="case-row">
-        <p class="case-row-label">The Solution</p>
+        <h2 class="case-row-label">The Solution</h2>
         <div class="case-row-content">
           <p>Users had two paths into content creation: Shopify merchants could pull products or collections directly from their connected store, while non-Shopify users could paste a web URL — Bluumly's LLM would read the page to extract context, product imagery, and a CTA link. Both paths fed the same generation engine, so content quality stayed consistent regardless of source.</p>
           <p>To manage the setup complexity, I used a progressive flow: campaign name, target audience, goal, and start date were broken into small, collapsible sections rather than one long form — so users only ever faced one decision at a time. Platform support spanned LinkedIn, Facebook, Instagram, TikTok, Pinterest, and X, including native support for Instagram Reels and Stories.</p>
@@ -98,7 +123,7 @@
       </div>
 
       <div class="case-row">
-        <p class="case-row-label">Review &amp; Refine</p>
+        <h2 class="case-row-label">Review &amp; Refine</h2>
         <div class="case-row-content">
           <p>Once a campaign was generated, users could preview every post inside an iPhone mockup that simulated the real platform UI — giving a true sense of how content would actually appear before publishing. From there, built-in editing tools (cropping, carousel rearrangement, brightness and saturation adjustments) let users fine-tune without leaving Bluumly or opening a separate design tool.</p>
         </div>

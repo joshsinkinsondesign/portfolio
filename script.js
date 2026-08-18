@@ -24,3 +24,43 @@ if (!prefersReducedMotion && 'IntersectionObserver' in window) {
 
   revealTargets.forEach((el) => observer.observe(el));
 }
+
+// Mobile nav toggle
+const navToggle = document.querySelector('.nav-toggle');
+const mobileNav = document.getElementById('mobile-nav');
+
+if (navToggle && mobileNav) {
+  const closeMenu = () => {
+    mobileNav.hidden = true;
+    navToggle.setAttribute('aria-expanded', 'false');
+  };
+
+  const openMenu = () => {
+    mobileNav.hidden = false;
+    navToggle.setAttribute('aria-expanded', 'true');
+  };
+
+  navToggle.addEventListener('click', () => {
+    const isOpen = navToggle.getAttribute('aria-expanded') === 'true';
+    isOpen ? closeMenu() : openMenu();
+  });
+
+  mobileNav.querySelectorAll('a').forEach((link) => {
+    link.addEventListener('click', closeMenu);
+  });
+
+  document.addEventListener('keydown', (e) => {
+    if (e.key === 'Escape') closeMenu();
+  });
+
+  document.addEventListener('click', (e) => {
+    const isOpen = navToggle.getAttribute('aria-expanded') === 'true';
+    if (isOpen && !mobileNav.contains(e.target) && !navToggle.contains(e.target)) {
+      closeMenu();
+    }
+  });
+
+  window.matchMedia('(min-width: 641px)').addEventListener('change', (e) => {
+    if (e.matches) closeMenu();
+  });
+}

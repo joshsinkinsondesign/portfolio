@@ -5,12 +5,26 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Signup Flow — Josh Sinkinson</title>
 <meta name="description" content="Reducing friction in Bluumly's onboarding to fix a broken first impression.">
+<meta name="theme-color" content="#111210">
+<link rel="canonical" href="https://joshsinkinsondesign.com/signup-flow.html">
+
+<meta property="og:type" content="website">
+<meta property="og:title" content="Signup Flow — Josh Sinkinson">
+<meta property="og:description" content="Reducing friction in Bluumly's onboarding to fix a broken first impression.">
+<meta property="og:image" content="https://joshsinkinsondesign.com/assets/images/Bluumly_signup_flow.png">
+<meta property="og:url" content="https://joshsinkinsondesign.com/signup-flow.html">
+
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Signup Flow — Josh Sinkinson">
+<meta name="twitter:description" content="Reducing friction in Bluumly's onboarding to fix a broken first impression.">
+<meta name="twitter:image" content="https://joshsinkinsondesign.com/assets/images/Bluumly_signup_flow.png">
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;500;600;700;800&family=Atkinson+Hyperlegible:ital,wght@0,400;0,700;1,400;1,700&family=Sora:wght@600;700&family=Jost:wght@300;400;500;600&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;500;600;700;800&family=Atkinson+Hyperlegible:ital,wght@0,400;0,700;1,400;1,700&family=Sora:wght@600;700&family=Jost:wght@300;400;500;600&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="https://use.typekit.net/wvj4qfc.css">
 <link rel="icon" type="image/svg+xml" href="favicon.svg">
+<link rel="apple-touch-icon" href="assets/images/favicon-180.png">
 <link rel="stylesheet" href="styles.css">
 </head>
 <body>
@@ -28,8 +42,19 @@
       <a href="index.html#about">About</a>
       <a href="index.html#contact">Contact</a>
     </nav>
+    <button type="button" class="nav-toggle" aria-label="Open menu" aria-expanded="false" aria-controls="mobile-nav">
+      <span class="nav-toggle-bar"></span>
+      <span class="nav-toggle-bar"></span>
+      <span class="nav-toggle-bar"></span>
+    </button>
     <a href="index.html#contact" class="header-cta">Let's talk</a>
   </div>
+  <nav class="mobile-nav" id="mobile-nav" aria-label="Primary mobile" hidden>
+    <a href="index.html#work">Work</a>
+    <a href="index.html#brand-work">Brand &amp; Visual Design</a>
+    <a href="index.html#about">About</a>
+    <a href="index.html#contact">Contact</a>
+  </nav>
 </header>
 
 <main>
@@ -44,7 +69,7 @@
     <div class="case-hero">
       <div class="case-hero-inner">
         <p class="case-index">Case Study 01</p>
-        <h2 class="case-title">Signup Flow</h2>
+        <h1 class="case-title">Signup Flow</h1>
         <p class="case-subtitle">Reducing friction in Bluumly's onboarding to fix a broken first impression.</p>
         <div class="case-tags">
           <span class="tag">Onboarding</span>
@@ -60,14 +85,14 @@
 
     <div class="case-body">
       <div class="case-row">
-        <p class="case-row-label">Overview</p>
+        <h2 class="case-row-label">Overview</h2>
         <div class="case-row-content">
           <p>Bluumly was facing an issue that many startups face: user acquisition and retention were at an all-time low. I met with the team to discuss what we were noticing in user screen recordings and how we could remedy any user pain points.</p>
         </div>
       </div>
 
       <div class="case-row">
-        <p class="case-row-label">The Challenge</p>
+        <h2 class="case-row-label">The Challenge</h2>
         <div class="case-row-content">
           <p>When looking into Clarity, it was clear that our users were struggling to get a foot in the door. The sign-up flow initially included a demo flow that gave users a quick overview of what Bluumly could offer before prompting them to sign up. This was a pain point that gave users a false sense of accomplishment and a "gotcha" moment, negatively impacting the user experience.</p>
         </div>
@@ -78,7 +103,7 @@
       </div>
 
       <div class="case-row">
-        <p class="case-row-label">The Solution</p>
+        <h2 class="case-row-label">The Solution</h2>
         <div class="case-row-content">
           <p>I brought the flow to a fellow designer for a fresh set of eyes. His feedback was specific: the Shopify signup process was carrying too many steps — account creation, a demo flow, password creation, a store connection screen, and a social media connection screen, all in sequence. He recommended reducing the social platform options from seven shown at once down to three, with the rest tucked under a dropdown, and cutting the visible signup options down to two: Shopify OAuth and email.</p>
           <p>I took that feedback and focused on three goals: reduce steps, move account creation to the start, and strip the nav bar until onboarding was complete.</p>
@@ -93,7 +118,7 @@
       </div>
 
       <div class="case-row">
-        <p class="case-row-label">AI-Assisted Workflow</p>
+        <h2 class="case-row-label">AI-Assisted Workflow</h2>
         <div class="case-row-content">
           <p>Following my session with an outside designer, I brought his feedback directly into a working prototype using Figma Make. Rather than rebuilding the flow from scratch, I used AI to generate a refined iteration of the existing user flow — capturing the structural improvements quickly. From there, I took the core layout and idea as a foundation, then layered in Bluumly's branding guidelines and built out fully editable frames ready for handoff to our front-end developer.</p>
         </div>
@@ -110,7 +135,7 @@
       </div>
 
       <div class="case-row impact-row">
-        <p class="case-row-label">Outcome</p>
+        <h2 class="case-row-label">Outcome</h2>
         <div class="case-row-content">
           <ul class="impact-grid">
             <li><span class="impact-num">6 → 3</span><span class="impact-text">Cut the signup flow from 6 steps to 3, removing the demo redirect, separate password creation, and manual store connection screen</span></li>

@@ -5,12 +5,26 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Attribution Dashboard — Josh Sinkinson</title>
 <meta name="description" content="Bridging the gap between creative output and revenue for Shopify merchants.">
+<meta name="theme-color" content="#111210">
+<link rel="canonical" href="https://joshsinkinsondesign.com/attribution-dashboard.html">
+
+<meta property="og:type" content="website">
+<meta property="og:title" content="Attribution Dashboard — Josh Sinkinson">
+<meta property="og:description" content="Bridging the gap between creative output and revenue for Shopify merchants.">
+<meta property="og:image" content="https://joshsinkinsondesign.com/assets/images/attributionimg.png">
+<meta property="og:url" content="https://joshsinkinsondesign.com/attribution-dashboard.html">
+
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Attribution Dashboard — Josh Sinkinson">
+<meta name="twitter:description" content="Bridging the gap between creative output and revenue for Shopify merchants.">
+<meta name="twitter:image" content="https://joshsinkinsondesign.com/assets/images/attributionimg.png">
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;500;600;700;800&family=Atkinson+Hyperlegible:ital,wght@0,400;0,700;1,400;1,700&family=Sora:wght@600;700&family=Jost:wght@300;400;500;600&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;500;600;700;800&family=Atkinson+Hyperlegible:ital,wght@0,400;0,700;1,400;1,700&family=Sora:wght@600;700&family=Jost:wght@300;400;500;600&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="https://use.typekit.net/wvj4qfc.css">
 <link rel="icon" type="image/svg+xml" href="favicon.svg">
+<link rel="apple-touch-icon" href="assets/images/favicon-180.png">
 <link rel="stylesheet" href="styles.css">
 </head>
 <body>
@@ -28,8 +42,19 @@
       <a href="index.html#about">About</a>
       <a href="index.html#contact">Contact</a>
     </nav>
+    <button type="button" class="nav-toggle" aria-label="Open menu" aria-expanded="false" aria-controls="mobile-nav">
+      <span class="nav-toggle-bar"></span>
+      <span class="nav-toggle-bar"></span>
+      <span class="nav-toggle-bar"></span>
+    </button>
     <a href="index.html#contact" class="header-cta">Let's talk</a>
   </div>
+  <nav class="mobile-nav" id="mobile-nav" aria-label="Primary mobile" hidden>
+    <a href="index.html#work">Work</a>
+    <a href="index.html#brand-work">Brand &amp; Visual Design</a>
+    <a href="index.html#about">About</a>
+    <a href="index.html#contact">Contact</a>
+  </nav>
 </header>
 
 <main>
@@ -44,7 +69,7 @@
     <div class="case-hero">
       <div class="case-hero-inner">
         <p class="case-index">Case Study 03</p>
-        <h2 class="case-title">Attribution Dashboard</h2>
+        <h1 class="case-title">Attribution Dashboard</h1>
         <p class="case-subtitle">Bridging the gap between creative output and revenue for Shopify merchants.</p>
         <div class="case-tags">
           <span class="tag">Data visualization</span>
@@ -60,14 +85,14 @@
 
     <div class="case-body">
       <div class="case-row">
-        <p class="case-row-label">The Mission</p>
+        <h2 class="case-row-label">The Mission</h2>
         <div class="case-row-content">
           <p>Bluumly began as a tool to unify social media marketing, but a solid foundation wasn't enough. We noticed a recurring challenge for our users: social media success wasn't translating into business success. We set out to solve this by asking: how can we bridge the gap between creative output and revenue? This question became the catalyst for our innovation, transforming Bluumly from a scheduler into a growth-focused ecosystem.</p>
         </div>
       </div>
 
       <div class="case-row">
-        <p class="case-row-label">The Problem</p>
+        <h2 class="case-row-label">The Problem</h2>
         <div class="case-row-content">
           <p class="pull-quote">"Creating content is easier said than done, and for small shops, the value just wasn't there yet."</p>
           <p>While Bluumly succeeded in making content creation easy, our users were left with a critical question: how is this contributing to my bottom line? We realized that ease of use wasn't enough to sustain a subscription; we needed to provide proof of value. The attribution framework was conceptualized as a direct response to this user pain point, providing the transparency needed to link creative efforts to revenue.</p>
@@ -80,7 +105,7 @@
       </div>
 
       <div class="case-row">
-        <p class="case-row-label">AI-Assisted Workflow</p>
+        <h2 class="case-row-label">AI-Assisted Workflow</h2>
         <div class="case-row-content">
           <p>After iterating on the lo-fi designs, I fed the wireframes directly into Figma Make's AI to accelerate the transition to high fidelity. This saved significant time in determining layout and visual hierarchy — areas that often slow the early stages of high-fidelity work. Once I was satisfied with the AI-generated output, I imported it into the main Figma file and refined each screen to align with Bluumly's branding and design guidelines, ensuring the final designs felt native to the product.</p>
         </div>
@@ -91,7 +116,7 @@
       </div>
 
       <div class="case-row">
-        <p class="case-row-label">Defining the Attribution Framework</p>
+        <h2 class="case-row-label">Defining the Attribution Framework</h2>
         <div class="case-row-content">
           <p>Building a bridge between social content and commerce required more than just UI — it required a robust logic layer. I worked closely with our data scientist to define a Confidence Scoring System that could accurately attribute revenue to creative assets. We developed a multi-factor algorithm that analyzed clicks, orders, and conversion rates to assign a specific score to each post. By calculating the time-to-purchase window, we were able to filter out noise and provide small business owners with a clear, honest view of their marketing impact.</p>
           <p>I then transitioned this into a high-fidelity interface focused on three areas: an at-a-glance dashboard displaying attributed orders and revenue metrics; a view-switching system for both post-level and campaign-level analysis; and a weighted UI hierarchy that highlights Confidence Scores to distinguish direct conversions from assisted sales. By utilizing shadcn/ui and reusing established components, I ensured the new attribution screens felt native to the existing Bluumly ecosystem — delivering not just screens, but a functional roadmap that respected our developer's timeline.</p>
@@ -114,7 +139,7 @@
       </div>
 
       <div class="case-row">
-        <p class="case-row-label">Outcome</p>
+        <h2 class="case-row-label">Outcome</h2>
         <div class="case-row-content">
           <p>Bluumly was still early-stage, so this project wasn't about proving lift against existing usage data — it was about making a genuinely hard problem legible. Attribution modeling involves noise, multi-factor scoring, and a time-decay window that's difficult to explain even to other designers.</p>
           <p>The real measure of success was whether a small business owner with no data background could look at a Confidence Score and immediately know what to trust — turning a backend algorithm into something a non-technical user could act on with confidence.</p>
@@ -123,12 +148,12 @@
     </div>
   </article>
 
-  <!-- BACK TO WORK -->
+  <!-- NEXT CASE STUDY -->
   <div class="cs-next-wrap">
     <div class="section-inner">
-      <p class="cs-next-label">Back to all work</p>
-      <a href="index.html#work" class="cs-next-link">
-        <span class="cs-next-title">View all case studies</span>
+      <p class="cs-next-label">Next case study</p>
+      <a href="shutterplate.html" class="cs-next-link">
+        <span class="cs-next-title">ShutterPlate</span>
         <span class="cs-next-arrow">→</span>
       </a>
     </div>

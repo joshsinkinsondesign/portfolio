@@ -22,7 +22,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="preconnect" href="https://use.typekit.net" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;500;600;700;800&family=Atkinson+Hyperlegible:ital,wght@0,400;0,700;1,400;1,700&family=Sora:wght@600;700&family=Jost:wght@300;400;500;600&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;500;600;700;800&family=Atkinson+Hyperlegible:ital,wght@0,400;0,700;1,400;1,700&family=Sora:wght@600;700&family=Jost:wght@300;400;500;600&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="https://use.typekit.net/wvj4qfc.css">
 
 <link rel="icon" type="image/svg+xml" href="favicon.svg">
@@ -66,8 +66,19 @@
       <a href="#about">About</a>
       <a href="#contact">Contact</a>
     </nav>
+    <button type="button" class="nav-toggle" aria-label="Open menu" aria-expanded="false" aria-controls="mobile-nav">
+      <span class="nav-toggle-bar"></span>
+      <span class="nav-toggle-bar"></span>
+      <span class="nav-toggle-bar"></span>
+    </button>
     <a href="#contact" class="header-cta">Let's talk</a>
   </div>
+  <nav class="mobile-nav" id="mobile-nav" aria-label="Primary mobile" hidden>
+    <a href="#work">Work</a>
+    <a href="#brand-work">Brand &amp; Visual Design</a>
+    <a href="#about">About</a>
+    <a href="#contact">Contact</a>
+  </nav>
 </header>
 
 <main id="top">
@@ -106,7 +117,7 @@
   <!-- ABOUT -->
   <section class="about" id="about">
     <div class="section-inner">
-      <p class="section-tag">01 — About</p>
+      <p class="section-tag">About</p>
       <div class="about-grid">
         <div class="about-intro">
           <h2>One designer. End to end.</h2>
@@ -124,7 +135,7 @@
   <!-- WORK -->
   <section class="work-intro" id="work">
     <div class="section-inner">
-      <p class="section-tag">02 — Selected work</p>
+      <p class="section-tag">Selected work</p>
       <h2>From zero. End to end.</h2>
     </div>
   </section>
@@ -210,7 +221,7 @@
     </div>
 
     <div class="section-inner brand-intro">
-      <p class="section-tag">03 — Brand &amp; Visual Design</p>
+      <p class="section-tag">Brand &amp; Visual Design</p>
       <h2>InBalance Soul</h2>
       <p class="brand-blurb">
         <a href="https://inbalancesoul.com" target="_blank" rel="noopener" class="inline-link">InBalance Soul</a> reached out to give three of their room &amp; body mists — Sacred Harmony, Positive Energy, and Balance &amp; Relax — a modern facelift. As the sole designer on the project, I started with symbol exploration, digging into marks that could carry the brand's core message: balance, energy, and calm, distilled into a single icon per scent.
@@ -240,7 +251,7 @@
 
   <section class="contact" id="contact">
     <div class="section-inner">
-      <p class="section-tag">04 — Contact</p>
+      <p class="section-tag">Contact</p>
       <h2>Have a project in mind?</h2>
       <p class="contact-lede">Open to the right opportunities — new products, hard problems, teams that care about craft.</p>
       <div class="contact-links">
