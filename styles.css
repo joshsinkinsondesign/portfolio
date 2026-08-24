@@ -339,10 +339,10 @@ img, video {
 }
 
 .hero-headline {
-  font-size: clamp(32px, 5.2vw, 58px);
-  line-height: 1.12;
-  max-width: 22ch;
-  font-weight: 600;
+  font-size: clamp(34px, 6vw, 64px);
+  line-height: 1.08;
+  max-width: 16ch;
+  font-weight: 700;
 }
 
 .hero-emphasis {
@@ -657,7 +657,7 @@ img, video {
   color: #B9633B;
 }
 
-.brand-intro h2 {
+.brand-intro h1 {
   font-family: 'jeanne-moderno', serif;
   font-weight: 400;
   font-size: clamp(32px, 4.8vw, 52px);
@@ -797,7 +797,14 @@ button:focus-visible {
   gap: 16px;
 }
 
-/* --- Featured card (ShutterPlate) --- */
+/* --- Featured row: ShutterPlate (wide) + InBalance Soul (compact) --- */
+.work-featured-row {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 16px;
+  align-items: stretch;
+}
+
 .work-featured {
   display: grid;
   grid-template-columns: 1.5fr 1fr;
@@ -966,6 +973,7 @@ button:focus-visible {
 
 /* --- Responsive --- */
 @media (max-width: 900px) {
+  .work-featured-row { grid-template-columns: 1fr; }
   .work-featured {
     grid-template-columns: 1fr;
     min-height: auto;
