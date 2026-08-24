@@ -878,6 +878,32 @@ button:focus-visible {
   max-width: 36ch;
 }
 
+/* --- Section divider (concept/brand → product design) --- */
+.work-section-divider {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  margin: 48px 0 40px;
+}
+
+.work-section-divider::before,
+.work-section-divider::after {
+  content: '';
+  flex: 1;
+  height: 1px;
+  background: var(--border);
+}
+
+.work-section-label {
+  font-family: var(--font-mono);
+  font-size: 11px;
+  font-weight: 400;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--muted);
+  white-space: nowrap;
+}
+
 /* --- Compact row (Bluumly 01–03) --- */
 .work-compact-row {
   display: grid;
