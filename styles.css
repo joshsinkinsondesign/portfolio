@@ -797,12 +797,11 @@ button:focus-visible {
   gap: 16px;
 }
 
-/* --- Featured row: ShutterPlate (wide) + InBalance Soul (compact) --- */
+/* --- Featured row: ShutterPlate + InBalance Soul, stacked --- */
 .work-featured-row {
-  display: grid;
-  grid-template-columns: 2fr 1fr;
+  display: flex;
+  flex-direction: column;
   gap: 16px;
-  align-items: stretch;
 }
 
 .work-featured {
@@ -973,7 +972,6 @@ button:focus-visible {
 
 /* --- Responsive --- */
 @media (max-width: 900px) {
-  .work-featured-row { grid-template-columns: 1fr; }
   .work-featured {
     grid-template-columns: 1fr;
     min-height: auto;
