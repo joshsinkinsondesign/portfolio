@@ -460,11 +460,11 @@ img, video {
 
 .about-photo img {
   position: absolute;
-  inset: 0;
-  width: 100%;
-  height: 100%;
+  inset: -2px;
+  width: calc(100% + 4px);
+  height: calc(100% + 4px);
   object-fit: cover;
-  object-position: center 15%;
+  object-position: center 20%;
   display: block;
   filter: grayscale(15%);
   opacity: 0.9;
