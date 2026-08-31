@@ -372,16 +372,22 @@ img, video {
    ============================================ */
 .about {
   border-top: 1px solid var(--border);
+  padding-top: clamp(80px, 14vw, 160px);
 }
 
 .about-split {
+  max-width: 1200px;
+  margin: 0 auto;
   display: grid;
-  grid-template-columns: 1fr 1fr;
-  min-height: 480px;
+  grid-template-columns: 45fr 55fr;
+  min-height: 560px;
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  overflow: hidden;
 }
 
 .about-text {
-  padding: clamp(48px, 7vw, 80px) clamp(32px, 5vw, 72px);
+  padding: clamp(48px, 6vw, 72px) clamp(36px, 5vw, 64px);
   border-right: 1px solid var(--border);
   display: flex;
   flex-direction: column;
@@ -403,7 +409,7 @@ img, video {
   font-size: 16px;
   line-height: 1.75;
   color: var(--ink-soft);
-  max-width: 52ch;
+  max-width: 48ch;
   margin: 0 0 14px;
 }
 
@@ -436,28 +442,33 @@ img, video {
 .about-photo {
   overflow: hidden;
   background: var(--bg-alt);
+  position: relative;
 }
 
 .about-photo img {
+  position: absolute;
+  inset: 0;
   width: 100%;
   height: 100%;
   object-fit: cover;
-  object-position: center top;
+  object-position: center 15%;
   display: block;
   filter: grayscale(15%);
   opacity: 0.9;
 }
 
-@media (max-width: 800px) {
+@media (max-width: 900px) {
   .about-split {
     grid-template-columns: 1fr;
+    margin: 0 var(--gutter);
   }
   .about-text {
     border-right: none;
     border-bottom: 1px solid var(--border);
   }
   .about-photo {
-    min-height: 320px;
+    min-height: 340px;
+    position: relative;
   }
 }
 
