@@ -334,6 +334,14 @@ img, video {
   color: var(--accent);
 }
 
+.hero-break {
+  display: block;
+}
+
+@media (max-width: 640px) {
+  .hero-break { display: none; }
+}
+
 .hero-meta {
   display: flex;
   flex-wrap: wrap;
