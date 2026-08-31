@@ -372,7 +372,7 @@ img, video {
    ============================================ */
 .about {
   border-top: 1px solid var(--border);
-  padding-top: clamp(80px, 14vw, 160px);
+  padding: clamp(80px, 14vw, 160px) 0 clamp(80px, 14vw, 160px);
 }
 
 .about-split {
@@ -381,8 +381,6 @@ img, video {
   display: grid;
   grid-template-columns: 45fr 55fr;
   min-height: 560px;
-  border: 1px solid var(--border);
-  border-radius: var(--radius);
   overflow: hidden;
 }
 
