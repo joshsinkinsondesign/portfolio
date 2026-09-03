@@ -270,8 +270,11 @@ img, video {
    HERO
    ============================================ */
 .hero {
+  min-height: 100svh;
   padding: clamp(64px, 10vw, 120px) 0 clamp(56px, 8vw, 96px);
   border-bottom: 1px solid var(--border);
+  display: flex;
+  align-items: center;
 }
 
 .hero-inner {
