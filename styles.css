@@ -13,6 +13,11 @@
   --border: #2a2b27;
   --border-strong: #3a3b36;
 
+  /* Signal: the one color in Charcoal. Used only where something is
+     interactive or live — never decoratively. Same green as the status dot. */
+  --signal: #22C55E;
+  --signal-hover: #4ADE80;
+
   --font-display: 'Sora', sans-serif;
   --font-ui: 'Archivo', sans-serif;
   --font-body: 'Atkinson Hyperlegible', sans-serif;
@@ -318,7 +323,7 @@ img, video {
   width: 7px;
   height: 7px;
   border-radius: 50%;
-  background: #22C55E;
+  background: var(--signal);
   flex-shrink: 0;
 }
 
@@ -517,7 +522,7 @@ img, video {
 }
 
 .about-cta:hover {
-  border-color: var(--ink);
+  border-color: var(--signal);
   color: var(--ink);
 }
 
@@ -710,7 +715,7 @@ img, video {
   font-weight: 500;
   line-height: 1.4;
   color: var(--ink) !important;
-  border-left: 3px solid var(--accent);
+  border-left: 3px solid var(--signal);
   padding-left: 20px;
   margin-bottom: 24px !important;
 }
@@ -873,13 +878,13 @@ img, video {
   font-weight: 600;
   color: var(--ink);
   padding-bottom: 6px;
-  background: linear-gradient(var(--accent), var(--accent)) left bottom / 100% 2px no-repeat;
+  background: linear-gradient(var(--signal), var(--signal)) left bottom / 100% 2px no-repeat;
   transition: color 0.15s ease, background-size 0.5s cubic-bezier(0.22, 1, 0.36, 1);
 }
 
 /* underline retracts to the right on hover, redraws from the left on leave */
 .contact-link-primary:hover {
-  color: var(--accent);
+  color: var(--signal);
   background-position: right bottom;
   background-size: 0% 2px;
 }
@@ -924,7 +929,7 @@ img, video {
    ============================================ */
 a:focus-visible,
 button:focus-visible {
-  outline: 2px solid var(--accent);
+  outline: 2px solid var(--signal);
   outline-offset: 3px;
   border-radius: 2px;
 }
@@ -1015,7 +1020,7 @@ button:focus-visible {
   transition: color 0.15s ease;
 }
 
-.work-featured:hover .work-featured-title { color: var(--accent); }
+.work-featured:hover .work-featured-title { color: var(--signal); }
 
 .work-featured-sub {
   font-family: var(--font-body);
@@ -1126,7 +1131,7 @@ button:focus-visible {
   transition: color 0.15s ease;
 }
 
-.work-compact-card:hover .work-compact-title { color: var(--accent); }
+.work-compact-card:hover .work-compact-title { color: var(--signal); }
 
 .work-flagship-badge {
   display: inline-block;
@@ -1168,8 +1173,20 @@ button:focus-visible {
    CASE STUDY PAGES — BACK / NEXT NAV
    ============================================ */
 .cs-back-wrap {
-  padding: clamp(20px, 3vw, 32px) 0 0;
+  padding: clamp(28px, 4vw, 40px) 0 0;
 }
+
+/* The back link belongs to the page hero: no rule or band between them */
+.cs-back-wrap + .case-study {
+  border-top: none;
+  padding-top: clamp(36px, 5vw, 56px);
+}
+
+.cs-back-wrap:has(+ .brand-work) {
+  padding-bottom: clamp(20px, 3vw, 28px);
+}
+
+.cs-back-wrap + .brand-work { border-top: none; }
 
 .cs-back {
   font-family: var(--font-ui);
@@ -1216,7 +1233,7 @@ button:focus-visible {
 
 .cs-next-arrow {
   font-size: clamp(20px, 3vw, 30px);
-  color: var(--accent);
+  color: var(--signal);
   line-height: 1;
 }
 
@@ -1231,7 +1248,7 @@ button:focus-visible {
   font-size: 15px;
   font-weight: 700;
   color: var(--bg);
-  background: var(--accent);
+  background: var(--signal);
   padding: 14px 24px;
   border-radius: var(--radius-pill);
   margin-top: 8px;
@@ -1240,7 +1257,7 @@ button:focus-visible {
 }
 
 .prototype-cta:hover {
-  background: var(--accent-hover);
+  background: var(--signal-hover);
   gap: 12px;
 }
 
@@ -1389,7 +1406,7 @@ button:focus-visible {
   height: 7px;
   margin-top: -3.5px;
   border-radius: 50%;
-  background: #22C55E;
+  background: var(--signal);
   animation: ping 2.6s ease-out 1.2s infinite;
 }
 
@@ -1530,7 +1547,7 @@ button:focus-visible {
   height: 4px;
   margin-left: -2px;
   border-radius: 50%;
-  background: var(--ink);
+  background: var(--signal);
   opacity: 0;
   transform: scale(0);
   transition: opacity 0.25s ease, transform 0.35s var(--ease-out);
@@ -1567,7 +1584,7 @@ button:focus-visible {
   right: 0;
   height: 2px;
   z-index: 150;
-  background: var(--accent);
+  background: var(--signal);
   transform-origin: left;
   transform: scaleX(0);
   pointer-events: none;
@@ -1648,3 +1665,11 @@ body.lightbox-open { overflow: hidden; }
 
 /* First section label in the work grid sits closer to the heading */
 .work-section-divider--first { margin: 8px 0 24px; }
+
+/* Signal on hover for small text links */
+.cs-back:hover,
+.social-link:hover,
+.footer-inner a:hover,
+.hero-scroll:hover { color: var(--signal); }
+.cs-next-link:hover .cs-next-title { color: var(--signal); }
+.cs-next-title { transition: color 0.2s ease; }
