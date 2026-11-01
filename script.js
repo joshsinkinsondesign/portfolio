@@ -279,7 +279,7 @@ if (navToggle && mobileNav) {
     }
   });
 
-  window.matchMedia('(min-width: 641px)').addEventListener('change', (e) => {
+  window.matchMedia('(min-width: 901px)').addEventListener('change', (e) => {
     if (e.matches) closeMenu();
   });
 }
