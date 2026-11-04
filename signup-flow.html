@@ -5,7 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Signup Flow — Josh Sinkinson</title>
 <meta name="description" content="Reducing friction in Bluumly's onboarding to fix a broken first impression.">
-<meta name="theme-color" content="#111210">
+<meta name="theme-color" content="#FFFFFF">
 <link rel="canonical" href="https://www.joshsinkinsondesign.com/signup-flow">
 
 <meta property="og:type" content="website">
@@ -22,155 +22,113 @@
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;500;600;700;800&family=Atkinson+Hyperlegible:ital,wght@0,400;0,700;1,400;1,700&family=Sora:wght@600;700&family=Jost:wght@300;400;500;600&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="https://use.typekit.net/wvj4qfc.css">
 <link rel="icon" type="image/svg+xml" href="favicon.svg">
 <link rel="apple-touch-icon" href="assets/images/favicon-180.png">
-<link rel="stylesheet" href="styles.css">
+<link href="https://fonts.googleapis.com/css2?family=Inter+Tight:wght@400;500;600;700&amp;family=JetBrains+Mono:wght@400;500&amp;display=swap" rel="stylesheet">
+<style>
+body{margin:0;background:#FFFFFF}
+a{color:#0A0A0A;text-decoration:none}a:hover{color:#2B4BFF}
+</style>
 </head>
 <body>
+<div style="background: #FFFFFF; color: #0A0A0A; font-family: 'Inter Tight', system-ui, sans-serif; display: flex; flex-direction: column; min-height: 100vh">
 
-<div class="grain-overlay" aria-hidden="true"></div>
-
-<header class="site-header">
-  <div class="nav-pill">
-    <a href="index.html" class="logo" aria-label="Josh Sinkinson — home">
-      <svg viewBox="0 0 284.9 261.15" class="logo-mark" aria-hidden="true"><path fill="currentColor" d="M260.71,142.72c7.87,3.15,14.27,7.41,12.59,15.34-.65,3.08-3.03,6.22-6.52,7.41l-15.31,5.19c-20.53,6.96-40.34,14.69-60,24.06-25.89,12.33-50.51,26.15-74.61,41.53l-21.82,13.93c-3.9,2.49-7.92,4.95-12.37,6.16-3.55.96-7.7-.6-9.77-3.04-5.51-6.49-.04-15.3,5.41-22.87,9.79-13.61,19.64-26.75,30.32-39.67l13.22-14.88,6.46-7.3-31.02,1.99-54.95,71.75c-4.43,5.78-8.54,11.3-13.87,15.92-2.83,2.46-6.78,3.44-10.32,2.59-7.86-1.9-8.96-10.31-9.87-18.09-1.33-11.35-3.3-22.19-5.67-33.38-3.86-18.18-5.87-33.73,12.06-43.76,7.68-3.75,15.7-5.74,24.38-7.15,16.3-2.64,32.55-3.74,49.2-5.05,25.16-31.67,50.76-62.02,77.82-92.69-11.06,4.9-21.14,9.53-32.11,13.38-17.51,4.77-37.13,8.74-54.51,3.47-5.15-1.56-11.6-6.05-10.83-9.38.14-.59,1.57-.91,2.26-.78,6.01,1.08,11.63,1.36,17.72.51,6.96-.97,13.68-2.14,20.44-4.22,12.48-3.83,24.4-7.97,36.41-13.26,26.25-11.56,50.41-26.61,72.59-44.66,2.16-1.76,3.89-3.73,6.26-4.88,3.71-1.79,8.18-.8,10.63,2.07s2.93,7.8.31,11.15l-7.09,6.92-15.12,15.22-11.49,12.07c-31.31,32.89-60.01,67.2-89.1,103.33l34.39-2.16,11.9-9.81,1.84-.36c.43-.08.34,1.53.12,2.02l-3.33,7.32,41.1-4.14c6.36-.64,14.85.68,16.44,5.96,1.73,5.73-7.44,10.61-14.63,11.57-18.09,2.43-35.87,3.82-54.15,5.31l-23.78,34.12c-4.56,6.54-9.85,12.02-14.18,19.09,43.6-27.04,86.27-49.5,134.68-65.98l-70.27-28.09c-8.65-3.46-17.87-7.26-17.43-15.71.17-3.36,2.19-7.22,5.8-8.66l11.3-4.51,63.08-19.04c10.71-3.23,48.27-9.36,49.56-3.4.09.41-.56,1.52-.93,1.72l-11.9,6.15c-11.02,4.52-21.54,9.03-32.98,12.57l-54.09,16.76,75.73,30.33ZM19.44,203.33l5.89,32.1,47.87-63.01c-17.1,1.55-34.95,2.63-50.04,8.64-2.69,1.69-4.59,3.52-5.41,6.55-.09,5.34.67,10.19,1.68,15.73Z"></path></svg>
-    </a>
-    <nav class="main-nav" aria-label="Primary">
-      <a href="index.html#work">Work</a>
-      <a href="index.html#about">About</a>
-      <a href="index.html#contact">Contact</a>
-    </nav>
-    <button type="button" class="nav-toggle" aria-label="Open menu" aria-expanded="false" aria-controls="mobile-nav">
-      <span class="nav-toggle-bar"></span>
-      <span class="nav-toggle-bar"></span>
-      <span class="nav-toggle-bar"></span>
-    </button>
-    <a href="index.html#contact" class="header-cta">Let's talk</a>
-  </div>
-  <nav class="mobile-nav" id="mobile-nav" aria-label="Primary mobile" hidden>
-    <a href="index.html#work">Work</a>
-    <a href="index.html#about">About</a>
-    <a href="index.html#contact">Contact</a>
-  </nav>
-</header>
-
-<main>
-
-  <div class="cs-back-wrap">
-    <div class="section-inner">
-      <a href="index.html#work" class="cs-back">← All work</a>
-    </div>
-  </div>
-
-  <article class="case-study" id="signup-flow">
-    <div class="case-hero">
-      <div class="case-hero-inner">
-        <p class="case-index">Case Study 01</p>
-        <h1 class="case-title">Signup Flow</h1>
-        <p class="case-subtitle">Reducing friction in Bluumly's onboarding to fix a broken first impression.</p>
-        <div class="case-tags">
-          <span class="tag">Onboarding</span>
-          <span class="tag">0 → 1</span>
-          <span class="tag">Shopify OAuth</span>
-        </div>
-      </div>
-    </div>
-
-    <div class="case-media full-bleed">
-      <img src="assets/images/Bluumly_signup_flow.webp" width="2400" height="1543" alt="Bluumly sign up flow shown on a laptop, with the sign-up screen and a dashboard panel reading 'Grow your shop automatically'" loading="eager" fetchpriority="high">
-    </div>
-
-    <div class="case-body">
-      <div class="case-row">
-        <h2 class="case-row-label">Overview</h2>
-        <div class="case-row-content">
-          <p>Bluumly was facing an issue that many startups face: user acquisition and retention were at an all-time low. I met with the team to discuss what we were noticing in user screen recordings and how we could remedy any user pain points.</p>
-        </div>
-      </div>
-
-      <div class="case-row">
-        <h2 class="case-row-label">The Challenge</h2>
-        <div class="case-row-content">
-          <p>When looking into Clarity, it was clear that our users were struggling to get a foot in the door. The sign-up flow initially included a demo flow that gave users a quick overview of what Bluumly could offer before prompting them to sign up. This was a pain point that gave users a false sense of accomplishment and a "gotcha" moment, negatively impacting the user experience.</p>
-        </div>
-      </div>
-
-      <div class="case-media full-bleed">
-        <img src="assets/images/oldflow.webp" width="2400" height="1542" alt="The original six-step Bluumly signup flow: account creation, demo experience, password creation, connect your store, connect your social media, and end of signup" loading="lazy">
-      </div>
-
-      <div class="case-row">
-        <h2 class="case-row-label">The Solution</h2>
-        <div class="case-row-content">
-          <p>I brought the flow to a fellow designer for a fresh set of eyes. His feedback was specific: the Shopify signup process was carrying too many steps — account creation, a demo flow, password creation, a store connection screen, and a social media connection screen, all in sequence. He recommended reducing the social platform options from seven shown at once down to three, with the rest tucked under a dropdown, and cutting the visible signup options down to two: Shopify OAuth and email.</p>
-          <p>I took that feedback and focused on three goals: reduce steps, move account creation to the start, and strip the nav bar until onboarding was complete.</p>
-          <p>The biggest win was adding Shopify OAuth — letting users sign up and connect their store in a single click. For social media, I worked with our marketing strategist to narrow the options down to Facebook, Instagram, and Pinterest based on user behaviour, cutting visual clutter and decision fatigue.</p>
-        </div>
-      </div>
-
-      <div class="case-media inline">
-        <video autoplay muted loop playsinline aria-label="Screen recording of the redesigned Bluumly signup flow">
-            <source src="assets/video/Scene-1.webm" type="video/webm">
-          </video>
-      </div>
-
-      <div class="case-row">
-        <h2 class="case-row-label">AI-Assisted Workflow</h2>
-        <div class="case-row-content">
-          <p>Following my session with an outside designer, I brought his feedback directly into a working prototype using Figma Make. Rather than rebuilding the flow from scratch, I used AI to generate a refined iteration of the existing user flow — capturing the structural improvements quickly. From there, I took the core layout and idea as a foundation, then layered in Bluumly's branding guidelines and built out fully editable frames ready for handoff to our front-end developer.</p>
-        </div>
-      </div>
-
-      <div class="case-media inline">
-        <img src="assets/images/old_new.webp" width="2400" height="1562" alt="Comparison of the old and new 'Connect your social channels' screens in the Bluumly onboarding flow" loading="lazy">
-      </div>
-
-      <div class="case-media inline">
-        <video autoplay muted loop playsinline aria-label="Screen recording of the Bluumly social channel connection flow">
-            <source src="assets/video/Scene-2__2_.webm" type="video/webm">
-          </video>
-      </div>
-
-      <div class="case-row impact-row">
-        <h2 class="case-row-label">Outcome</h2>
-        <div class="case-row-content">
-          <ul class="impact-grid">
-            <li><span class="impact-num">6 → 3</span><span class="impact-text">Cut the signup flow from 6 steps to 3, removing the demo redirect, separate password creation, and manual store connection screen</span></li>
-            <li><span class="impact-num">01</span><span class="impact-text">Replaced manual store connection with one-click Shopify OAuth — matching how our actual users, Shopify store owners, already expect to sign in</span></li>
-            <li><span class="impact-num">7 → 3</span><span class="impact-text">Narrowed visible social platform options from 7 to 3, moving the rest under a dropdown to reduce decision fatigue</span></li>
-            <li><span class="impact-num">03</span><span class="impact-text">Stripped the nav bar until onboarding was complete, removing exit points before account creation</span></li>
-          </ul>
-          <p class="context-note">Bluumly was still pre-scale at the time of this redesign, so this wasn't about lifting a metric against existing volume — the priority was removing friction before growth, using screen recordings rather than usage data to guide the decisions above.</p>
-        </div>
-      </div>
-    </div>
-  </article>
-
-  <!-- NEXT CASE STUDY -->
-  <div class="cs-next-wrap">
-    <div class="section-inner">
-      <p class="cs-next-label">Next case study</p>
-      <a href="campaign-creator.html" class="cs-next-link">
-        <span class="cs-next-title">Campaign Creator</span>
-        <span class="cs-next-arrow">→</span>
+  <header style="position: sticky; top: 0; z-index: 20; background: rgba(255,255,255,0.88); backdrop-filter: blur(12px); -webkit-backdrop-filter: blur(12px); border-bottom: 1px solid #E7E7E4">
+    <div style="max-width: 1440px; margin: 0 auto; box-sizing: border-box; padding: 14px clamp(20px, 4vw, 64px); display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 16px">
+      <a href="index.html" aria-label="Josh Sinkinson — home" style="display: flex; align-items: center; min-height: 44px">
+        <svg viewBox="0 0 284.9 261.15" width="44" height="40" aria-hidden="true"><path fill="currentColor" d="M260.71,142.72c7.87,3.15,14.27,7.41,12.59,15.34-.65,3.08-3.03,6.22-6.52,7.41l-15.31,5.19c-20.53,6.96-40.34,14.69-60,24.06-25.89,12.33-50.51,26.15-74.61,41.53l-21.82,13.93c-3.9,2.49-7.92,4.95-12.37,6.16-3.55.96-7.7-.6-9.77-3.04-5.51-6.49-.04-15.3,5.41-22.87,9.79-13.61,19.64-26.75,30.32-39.67l13.22-14.88,6.46-7.3-31.02,1.99-54.95,71.75c-4.43,5.78-8.54,11.3-13.87,15.92-2.83,2.46-6.78,3.44-10.32,2.59-7.86-1.9-8.96-10.31-9.87-18.09-1.33-11.35-3.3-22.19-5.67-33.38-3.86-18.18-5.87-33.73,12.06-43.76,7.68-3.75,15.7-5.74,24.38-7.15,16.3-2.64,32.55-3.74,49.2-5.05,25.16-31.67,50.76-62.02,77.82-92.69-11.06,4.9-21.14,9.53-32.11,13.38-17.51,4.77-37.13,8.74-54.51,3.47-5.15-1.56-11.6-6.05-10.83-9.38.14-.59,1.57-.91,2.26-.78,6.01,1.08,11.63,1.36,17.72.51,6.96-.97,13.68-2.14,20.44-4.22,12.48-3.83,24.4-7.970,36.41-13.26,26.25-11.56,50.41-26.61,72.59-44.66,2.16-1.76,3.89-3.73,6.26-4.88,3.71-1.79,8.18-.8,10.63,2.07s2.93,7.8.31,11.15l-7.09,6.92-15.12,15.22-11.49,12.07c-31.31,32.89-60.01,67.2-89.1,103.33l34.39-2.16,11.9-9.81,1.84-.36c.43-.08.34,1.53.12,2.02l-3.33,7.32,41.1-4.14c6.36-.64,14.85.68,16.44,5.96,1.73,5.73-7.44,10.61-14.63,11.57-18.09,2.43-35.87,3.82-54.15,5.31l-23.78,34.12c-4.56,6.54-9.85,12.02-14.18,19.09,43.6-27.04,86.27-49.5,134.68-65.98l-70.27-28.09c-8.65-3.46-17.87-7.26-17.43-15.71.17-3.36,2.19-7.22,5.8-8.66l11.3-4.51,63.08-19.04c10.71-3.23,48.27-9.36,49.56-3.4.09.41-.56,1.52-.93,1.72l-11.9,6.15c-11.02,4.52-21.54,9.03-32.98,12.57l-54.09,16.76,75.73,30.33ZM19.44,203.33l5.89,32.1,47.87-63.01c-17.1,1.55-34.95,2.63-50.04,8.64-2.69,1.69-4.59,3.52-5.41,6.55-.09,5.34.67,10.19,1.68,15.73Z"></path></svg>
       </a>
+      <nav aria-label="Primary" style="display: flex; flex-wrap: wrap; gap: 4px 28px; font-size: 17px; font-weight: 500">
+        <a href="index.html#work" style="padding: 12px 0">Work</a>
+        <a href="index.html#about" style="padding: 12px 0">About</a>
+        <a href="index.html#contact" style="padding: 12px 0">Contact</a>
+      </nav>
     </div>
-  </div>
+  </header>
 
-</main>
+  <main style="flex: 1 0 auto; width: 100%; max-width: 1440px; margin: 0 auto; box-sizing: border-box; padding: 0 clamp(20px, 4vw, 64px)">
+    <a href="index.html#work" style="display: inline-flex; align-items: center; gap: 8px; min-height: 44px; margin-top: 28px; font-family: 'JetBrains Mono', monospace; font-size: 13px; text-transform: uppercase; letter-spacing: 0.04em; color: #555555">← All work</a>
 
-<footer class="site-footer">
-  <div class="section-inner footer-inner">
-    <span class="footer-brand">
-      <svg viewBox="0 0 284.9 261.15" class="logo-mark" aria-hidden="true"><path fill="currentColor" d="M260.71,142.72c7.87,3.15,14.27,7.41,12.59,15.34-.65,3.08-3.03,6.22-6.52,7.41l-15.31,5.19c-20.53,6.96-40.34,14.69-60,24.06-25.89,12.33-50.51,26.15-74.61,41.53l-21.82,13.93c-3.9,2.49-7.92,4.95-12.37,6.16-3.55.96-7.7-.6-9.77-3.04-5.51-6.49-.04-15.3,5.41-22.87,9.79-13.61,19.64-26.75,30.32-39.67l13.22-14.88,6.46-7.3-31.02,1.99-54.95,71.75c-4.43,5.78-8.54,11.3-13.87,15.92-2.83,2.46-6.78,3.44-10.32,2.59-7.86-1.9-8.96-10.31-9.87-18.09-1.33-11.35-3.3-22.19-5.67-33.38-3.86-18.18-5.87-33.73,12.06-43.76,7.68-3.75,15.7-5.74,24.38-7.15,16.3-2.64,32.55-3.74,49.2-5.05,25.16-31.67,50.76-62.02,77.82-92.69-11.06,4.9-21.14,9.53-32.11,13.38-17.51,4.77-37.13,8.74-54.51,3.47-5.15-1.56-11.6-6.05-10.83-9.38.14-.59,1.57-.91,2.26-.78,6.01,1.08,11.63,1.36,17.72.51,6.96-.97,13.68-2.14,20.44-4.22,12.48-3.83,24.4-7.97,36.41-13.26,26.25-11.56,50.41-26.61,72.59-44.66,2.16-1.76,3.89-3.73,6.26-4.88,3.71-1.79,8.18-.8,10.63,2.07s2.93,7.8.31,11.15l-7.09,6.92-15.12,15.22-11.49,12.07c-31.31,32.89-60.01,67.2-89.1,103.33l34.39-2.16,11.9-9.81,1.84-.36c.43-.08.34,1.53.12,2.02l-3.33,7.32,41.1-4.14c6.36-.64,14.85.68,16.44,5.96,1.73,5.73-7.44,10.61-14.63,11.57-18.09,2.43-35.87,3.82-54.15,5.31l-23.78,34.12c-4.56,6.54-9.85,12.02-14.18,19.09,43.6-27.04,86.27-49.5,134.68-65.98l-70.27-28.09c-8.65-3.46-17.87-7.26-17.43-15.71.17-3.36,2.19-7.22,5.8-8.66l11.3-4.51,63.08-19.04c10.71-3.23,48.27-9.36,49.56-3.4.09.41-.56,1.52-.93,1.72l-11.9,6.15c-11.02,4.52-21.54,9.03-32.98,12.57l-54.09,16.76,75.73,30.33ZM19.44,203.33l5.89,32.1,47.87-63.01c-17.1,1.55-34.95,2.63-50.04,8.64-2.69,1.69-4.59,3.52-5.41,6.55-.09,5.34.67,10.19,1.68,15.73Z"></path></svg>
-      Josh Sinkinson © <span id="year"></span>
-    </span>
-    <a href="index.html">Back to home</a>
-  </div>
-</footer>
+    <section aria-labelledby="cs-title" style="padding: clamp(40px, 6vw, 88px) 0 48px; display: flex; flex-direction: column; gap: 28px">
+      <p style="margin: 0; font-family: 'JetBrains Mono', monospace; font-size: 13px; text-transform: uppercase; letter-spacing: 0.04em; color: #555555">Case study 01 — Bluumly</p>
+      <h1 id="cs-title" style="margin: 0; font-weight: 600; font-size: clamp(52px, 9vw, 144px); line-height: 0.92; letter-spacing: -0.045em">Signup Flow</h1>
+      <p style="margin: 0; max-width: 34ch; font-size: clamp(22px, 2.2vw, 30px); line-height: 1.3; letter-spacing: -0.015em; color: #2A2A2A">Reducing friction in Bluumly's onboarding to fix a broken first impression.</p>
+      <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 24px 32px; border-top: 1px solid #0A0A0A; padding-top: 20px; margin-top: 24px">
+        <div style="display: flex; flex-direction: column; gap: 6px"><span style="font-family: 'JetBrains Mono', monospace; font-size: 12px; text-transform: uppercase; letter-spacing: 0.04em; color: #555555">Company</span><span style="font-size: 18px; font-weight: 500">Bluumly</span></div>
+        <div style="display: flex; flex-direction: column; gap: 6px"><span style="font-family: 'JetBrains Mono', monospace; font-size: 12px; text-transform: uppercase; letter-spacing: 0.04em; color: #555555">Role</span><span style="font-size: 18px; font-weight: 500">Sole designer</span></div>
+        <div style="display: flex; flex-direction: column; gap: 6px"><span style="font-family: 'JetBrains Mono', monospace; font-size: 12px; text-transform: uppercase; letter-spacing: 0.04em; color: #555555">Focus</span><span style="font-size: 18px; font-weight: 500">Onboarding, 0 → 1, Shopify OAuth</span></div>
+      </div>
+    </section>
 
-<script src="script.js"></script>
+    <figure style="margin: 0 0 32px; background: #F3F3F1"><img src="assets/images/Bluumly_signup_flow.webp" alt="Bluumly sign up flow shown on a laptop, with the sign-up screen and a dashboard panel reading 'Grow your shop automatically'" style="width: 100%; display: block"></figure>
+
+    <div style="display: flex; flex-wrap: wrap; gap: 16px 64px; padding: 56px 0; border-top: 1px solid #E7E7E4">
+      <h2 style="flex: 1 1 220px; margin: 0; font-family: 'JetBrains Mono', monospace; font-size: 13px; font-weight: 500; text-transform: uppercase; letter-spacing: 0.04em; color: #555555; padding-top: 6px">01 — Overview</h2>
+      <div style="flex: 999 1 520px; min-width: 0; max-width: 780px; display: flex; flex-direction: column; gap: 20px">
+        <p style="margin: 0; font-size: 19px; line-height: 1.65; color: #2A2A2A">Bluumly was facing an issue that many startups face: user acquisition and retention were at an all-time low. I met with the team to discuss what we were noticing in user screen recordings and how we could remedy any user pain points.</p>
+      </div>
+    </div>
+
+    <div style="display: flex; flex-wrap: wrap; gap: 16px 64px; padding: 56px 0; border-top: 1px solid #E7E7E4">
+      <h2 style="flex: 1 1 220px; margin: 0; font-family: 'JetBrains Mono', monospace; font-size: 13px; font-weight: 500; text-transform: uppercase; letter-spacing: 0.04em; color: #555555; padding-top: 6px">02 — The challenge</h2>
+      <div style="flex: 999 1 520px; min-width: 0; max-width: 780px; display: flex; flex-direction: column; gap: 20px">
+        <p style="margin: 0; font-size: 19px; line-height: 1.65; color: #2A2A2A">When looking into Clarity, it was clear that our users were struggling to get a foot in the door. The sign-up flow initially included a demo flow that gave users a quick overview of what Bluumly could offer before prompting them to sign up. This was a pain point that gave users a false sense of accomplishment and a "gotcha" moment, negatively impacting the user experience.</p>
+      </div>
+    </div>
+
+    <figure style="margin: 0 0 32px; background: #F3F3F1"><img loading="lazy" src="assets/images/oldflow.webp" alt="The original six-step Bluumly signup flow: account creation, demo experience, password creation, connect your store, connect your social media, and end of signup" style="width: 100%; display: block"></figure>
+
+    <div style="display: flex; flex-wrap: wrap; gap: 16px 64px; padding: 56px 0; border-top: 1px solid #E7E7E4">
+      <h2 style="flex: 1 1 220px; margin: 0; font-family: 'JetBrains Mono', monospace; font-size: 13px; font-weight: 500; text-transform: uppercase; letter-spacing: 0.04em; color: #555555; padding-top: 6px">03 — The solution</h2>
+      <div style="flex: 999 1 520px; min-width: 0; max-width: 780px; display: flex; flex-direction: column; gap: 20px">
+        <p style="margin: 0; font-size: 19px; line-height: 1.65; color: #2A2A2A">I brought the flow to a fellow designer for a fresh set of eyes. His feedback was specific: the Shopify signup process was carrying too many steps — account creation, a demo flow, password creation, a store connection screen, and a social media connection screen, all in sequence. He recommended reducing the social platform options from seven shown at once down to three, with the rest tucked under a dropdown, and cutting the visible signup options down to two: Shopify OAuth and email.</p>
+        <p style="margin: 0; font-size: 19px; line-height: 1.65; color: #2A2A2A">I took that feedback and focused on three goals: reduce steps, move account creation to the start, and strip the nav bar until onboarding was complete.</p>
+        <p style="margin: 0; font-size: 19px; line-height: 1.65; color: #2A2A2A">The biggest win was adding Shopify OAuth — letting users sign up and connect their store in a single click. For social media, I worked with our marketing strategist to narrow the options down to Facebook, Instagram, and Pinterest based on user behaviour, cutting visual clutter and decision fatigue.</p>
+      </div>
+    </div>
+
+    <figure style="margin: 0 0 32px; background: #F3F3F1"><video src="assets/video/Scene-1.webm" autoplay muted loop playsinline aria-label="Screen recording of the redesigned Bluumly signup flow" style="width: 100%; display: block"></video></figure>
+
+    <div style="display: flex; flex-wrap: wrap; gap: 16px 64px; padding: 56px 0; border-top: 1px solid #E7E7E4">
+      <h2 style="flex: 1 1 220px; margin: 0; font-family: 'JetBrains Mono', monospace; font-size: 13px; font-weight: 500; text-transform: uppercase; letter-spacing: 0.04em; color: #555555; padding-top: 6px">04 — AI-assisted workflow</h2>
+      <div style="flex: 999 1 520px; min-width: 0; max-width: 780px; display: flex; flex-direction: column; gap: 20px">
+        <p style="margin: 0; font-size: 19px; line-height: 1.65; color: #2A2A2A">Following my session with an outside designer, I brought his feedback directly into a working prototype using Figma Make. Rather than rebuilding the flow from scratch, I used AI to generate a refined iteration of the existing user flow — capturing the structural improvements quickly. From there, I took the core layout and idea as a foundation, then layered in Bluumly's branding guidelines and built out fully editable frames ready for handoff to our front-end developer.</p>
+      </div>
+    </div>
+
+    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(min(480px, 100%), 1fr)); gap: 24px; margin-bottom: 32px">
+      <figure style="margin: 0; background: #F3F3F1"><img loading="lazy" src="assets/images/old_new.webp" alt="Comparison of the old and new 'Connect your social channels' screens in the Bluumly onboarding flow" style="width: 100%; display: block"></figure>
+      <figure style="margin: 0; background: #F3F3F1"><video src="assets/video/Scene-2__2_.webm" autoplay muted loop playsinline aria-label="Screen recording of the Bluumly social channel connection flow" style="width: 100%; display: block"></video></figure>
+    </div>
+
+    <div style="display: flex; flex-wrap: wrap; gap: 16px 64px; padding: 56px 0; border-top: 1px solid #E7E7E4">
+      <h2 style="flex: 1 1 220px; margin: 0; font-family: 'JetBrains Mono', monospace; font-size: 13px; font-weight: 500; text-transform: uppercase; letter-spacing: 0.04em; color: #555555; padding-top: 6px">05 — Outcome</h2>
+      <div style="flex: 999 1 520px; min-width: 0; max-width: 900px; display: flex; flex-direction: column; gap: 36px">
+        <ul style="margin: 0; padding: 0; list-style: none; display: grid; grid-template-columns: repeat(auto-fit, minmax(min(320px, 100%), 1fr)); gap: 0 40px">
+          <li style="display: flex; flex-direction: column; gap: 10px; padding: 24px 0; border-top: 1px solid #0A0A0A"><span style="font-size: 56px; font-weight: 600; letter-spacing: -0.04em; line-height: 1; color: #2B4BFF">6 → 3</span><span style="font-size: 17px; line-height: 1.55; color: #2A2A2A">Cut the signup flow from 6 steps to 3, removing the demo redirect, separate password creation, and manual store connection screen</span></li>
+          <li style="display: flex; flex-direction: column; gap: 10px; padding: 24px 0; border-top: 1px solid #0A0A0A"><span style="font-size: 56px; font-weight: 600; letter-spacing: -0.04em; line-height: 1; color: #2B4BFF">1-click</span><span style="font-size: 17px; line-height: 1.55; color: #2A2A2A">Replaced manual store connection with one-click Shopify OAuth — matching how our actual users, Shopify store owners, already expect to sign in</span></li>
+          <li style="display: flex; flex-direction: column; gap: 10px; padding: 24px 0; border-top: 1px solid #0A0A0A"><span style="font-size: 56px; font-weight: 600; letter-spacing: -0.04em; line-height: 1; color: #2B4BFF">7 → 3</span><span style="font-size: 17px; line-height: 1.55; color: #2A2A2A">Narrowed visible social platform options from 7 to 3, moving the rest under a dropdown to reduce decision fatigue</span></li>
+          <li style="display: flex; flex-direction: column; gap: 10px; padding: 24px 0; border-top: 1px solid #0A0A0A"><span style="font-size: 56px; font-weight: 600; letter-spacing: -0.04em; line-height: 1; color: #2B4BFF">No nav</span><span style="font-size: 17px; line-height: 1.55; color: #2A2A2A">Stripped the nav bar until onboarding was complete, removing exit points before account creation</span></li>
+        </ul>
+        <p style="margin: 0; font-size: 16px; line-height: 1.6; color: #555555; max-width: 70ch">Bluumly was still pre-scale at the time of this redesign, so this wasn't about lifting a metric against existing volume — the priority was removing friction before growth, using screen recordings rather than usage data to guide the decisions above.</p>
+      </div>
+    </div>
+
+    <a href="campaign-creator.html" style="display: flex; flex-wrap: wrap; align-items: flex-end; justify-content: space-between; gap: 16px 32px; padding: 56px 0 72px; border-top: 1px solid #0A0A0A">
+      <span style="display: flex; flex-direction: column; gap: 14px">
+        <span style="font-family: 'JetBrains Mono', monospace; font-size: 13px; text-transform: uppercase; letter-spacing: 0.04em; color: #555555">Next case study</span>
+        <span style="font-weight: 600; font-size: clamp(40px, 6vw, 96px); line-height: 0.95; letter-spacing: -0.04em">Campaign Creator</span>
+      </span>
+      <span aria-hidden="true" style="font-size: clamp(40px, 6vw, 96px); line-height: 0.95; color: #2B4BFF">→</span>
+    </a>
+  </main>
+
+  <footer style="background: #0A0A0A; color: #A3A3A0">
+    <div style="max-width: 1440px; margin: 0 auto; box-sizing: border-box; padding: 24px clamp(20px, 4vw, 64px); display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 16px; font-family: 'JetBrains Mono', monospace; font-size: 12px; text-transform: uppercase; letter-spacing: 0.04em">
+      <span>Josh Sinkinson © 2026</span>
+      <a href="index.html" style="color: #FFFFFF; padding: 12px 0">Back to home</a>
+    </div>
+  </footer>
+</div>
 </body>
 </html>
