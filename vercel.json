@@ -6,6 +6,11 @@
       "source": "/index",
       "destination": "/",
       "permanent": true
+    },
+    {
+      "source": "/attribution-dashboard",
+      "destination": "/#work",
+      "permanent": true
     }
   ]
 }
