@@ -52,12 +52,11 @@ a{color:#0A0A0A;text-decoration:none}a:hover{color:#2B4BFF}
     <section aria-labelledby="cs-title" style="padding: clamp(40px, 6vw, 88px) 0 48px; display: flex; flex-direction: column; gap: 28px">
       <p style="margin: 0; font-family: 'JetBrains Mono', monospace; font-size: 13px; text-transform: uppercase; letter-spacing: 0.04em; color: #555555">Case study 01 — Bluumly</p>
       <h1 id="cs-title" style="margin: 0; font-weight: 600; font-size: clamp(52px, 9vw, 144px); line-height: 0.92; letter-spacing: -0.045em">Signup Flow</h1>
-      <p style="margin: 0; max-width: 34ch; font-size: clamp(22px, 2.2vw, 30px); line-height: 1.3; letter-spacing: -0.015em; color: #2A2A2A">Cutting signup from 6 steps to 3 so Shopify merchants could join and connect their store in one click.</p>
+      <p style="margin: 0; max-width: 34ch; font-size: clamp(22px, 2.2vw, 30px); line-height: 1.3; letter-spacing: -0.015em; color: #2A2A2A">Reducing friction in Bluumly's onboarding to fix a broken first impression.</p>
       <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 24px 32px; border-top: 1px solid #0A0A0A; padding-top: 20px; margin-top: 24px">
         <div style="display: flex; flex-direction: column; gap: 6px"><span style="font-family: 'JetBrains Mono', monospace; font-size: 12px; text-transform: uppercase; letter-spacing: 0.04em; color: #555555">Company</span><span style="font-size: 18px; font-weight: 500">Bluumly</span></div>
         <div style="display: flex; flex-direction: column; gap: 6px"><span style="font-family: 'JetBrains Mono', monospace; font-size: 12px; text-transform: uppercase; letter-spacing: 0.04em; color: #555555">Role</span><span style="font-size: 18px; font-weight: 500">Sole designer</span></div>
         <div style="display: flex; flex-direction: column; gap: 6px"><span style="font-family: 'JetBrains Mono', monospace; font-size: 12px; text-transform: uppercase; letter-spacing: 0.04em; color: #555555">Focus</span><span style="font-size: 18px; font-weight: 500">Onboarding, 0 → 1, Shopify OAuth</span></div>
-        <div style="display: flex; flex-direction: column; gap: 6px"><span style="font-family: 'JetBrains Mono', monospace; font-size: 12px; text-transform: uppercase; letter-spacing: 0.04em; color: #555555">Result</span><span style="font-size: 18px; font-weight: 500">Shipped · users reached their first campaign</span></div>
       </div>
     </section>
 
@@ -66,47 +65,52 @@ a{color:#0A0A0A;text-decoration:none}a:hover{color:#2B4BFF}
     <div style="display: flex; flex-wrap: wrap; gap: 16px 64px; padding: 56px 0; border-top: 1px solid #E7E7E4">
       <h2 style="flex: 1 1 220px; margin: 0; font-family: 'JetBrains Mono', monospace; font-size: 13px; font-weight: 500; text-transform: uppercase; letter-spacing: 0.04em; color: #555555; padding-top: 6px">01 — Overview</h2>
       <div style="flex: 999 1 520px; min-width: 0; max-width: 780px; display: flex; flex-direction: column; gap: 20px">
-        <p style="margin: 0; font-size: 19px; line-height: 1.65; color: #2A2A2A">Bluumly was struggling to turn visitors into active users. Screen recordings in Clarity showed where it broke: signup.</p>
+        <p style="margin: 0; font-size: 19px; line-height: 1.65; color: #2A2A2A">Bluumly was facing an issue that many startups face: user acquisition and retention were at an all-time low. I met with the team to discuss what we were noticing in user screen recordings and how we could remedy any user pain points.</p>
       </div>
     </div>
 
     <div style="display: flex; flex-wrap: wrap; gap: 16px 64px; padding: 56px 0; border-top: 1px solid #E7E7E4">
       <h2 style="flex: 1 1 220px; margin: 0; font-family: 'JetBrains Mono', monospace; font-size: 13px; font-weight: 500; text-transform: uppercase; letter-spacing: 0.04em; color: #555555; padding-top: 6px">02 — The challenge</h2>
       <div style="flex: 999 1 520px; min-width: 0; max-width: 780px; display: flex; flex-direction: column; gap: 20px">
-        <p style="margin: 0; font-size: 19px; line-height: 1.65; color: #2A2A2A">Signup ran six screens in a row, with a product demo dropped in before users had finished creating their account. It gave them a false sense of progress, then a &ldquo;gotcha&rdquo; when signup started again. That was the clearest pain point in the recordings.</p>
+        <p style="margin: 0; font-size: 19px; line-height: 1.65; color: #2A2A2A">When looking into Clarity, it was clear that our users were struggling to get a foot in the door. The sign-up flow initially included a demo flow that gave users a quick overview of what Bluumly could offer before prompting them to sign up. This was a pain point that gave users a false sense of accomplishment and a "gotcha" moment, negatively impacting the user experience.</p>
       </div>
     </div>
 
     <figure style="margin: 0 0 32px; background: #F3F3F1"><img loading="lazy" src="assets/images/oldflow.webp" alt="The original six-step Bluumly signup flow: account creation, demo experience, password creation, connect your store, connect your social media, and end of signup" style="width: 100%; display: block"></figure>
 
     <div style="display: flex; flex-wrap: wrap; gap: 16px 64px; padding: 56px 0; border-top: 1px solid #E7E7E4">
-      <h2 style="flex: 1 1 220px; margin: 0; font-family: 'JetBrains Mono', monospace; font-size: 13px; font-weight: 500; text-transform: uppercase; letter-spacing: 0.04em; color: #555555; padding-top: 6px">03 — Key decisions</h2>
+      <h2 style="flex: 1 1 220px; margin: 0; font-family: 'JetBrains Mono', monospace; font-size: 13px; font-weight: 500; text-transform: uppercase; letter-spacing: 0.04em; color: #555555; padding-top: 6px">03 — The solution</h2>
       <div style="flex: 999 1 520px; min-width: 0; max-width: 780px; display: flex; flex-direction: column; gap: 20px">
-        <p style="margin: 0; font-size: 19px; line-height: 1.65; color: #2A2A2A"><strong style="font-weight: 600; color: #0A0A0A">Account creation first.</strong> No demo interrupting signup.</p>
-        <p style="margin: 0; font-size: 19px; line-height: 1.65; color: #2A2A2A"><strong style="font-weight: 600; color: #0A0A0A">Shopify OAuth.</strong> Sign up and connect a store in one click, the way merchants already sign in.</p>
-        <p style="margin: 0; font-size: 19px; line-height: 1.65; color: #2A2A2A"><strong style="font-weight: 600; color: #0A0A0A">Seven social platforms down to three.</strong> I chose Facebook, Instagram and Pinterest with our marketing strategist based on user behavior. The rest moved into a dropdown.</p>
-        <p style="margin: 0; font-size: 19px; line-height: 1.65; color: #2A2A2A"><strong style="font-weight: 600; color: #0A0A0A">No nav until onboarding is done.</strong> This removed every exit point before the account existed.</p>
-        <p style="margin: 0; font-size: 19px; line-height: 1.65; color: #2A2A2A">An outside designer&rsquo;s review helped sharpen the direction. I prototyped it quickly in Figma Make, then rebuilt it in Bluumly&rsquo;s design system as editable frames for our front-end developer.</p>
+        <p style="margin: 0; font-size: 19px; line-height: 1.65; color: #2A2A2A">I brought the flow to a fellow designer for a fresh set of eyes. His feedback was specific: the Shopify signup process was carrying too many steps — account creation, a demo flow, password creation, a store connection screen, and a social media connection screen, all in sequence. He recommended reducing the social platform options from seven shown at once down to three, with the rest tucked under a dropdown, and cutting the visible signup options down to two: Shopify OAuth and email.</p>
+        <p style="margin: 0; font-size: 19px; line-height: 1.65; color: #2A2A2A">I took that feedback and focused on three goals: reduce steps, move account creation to the start, and strip the nav bar until onboarding was complete.</p>
+        <p style="margin: 0; font-size: 19px; line-height: 1.65; color: #2A2A2A">The biggest win was adding Shopify OAuth — letting users sign up and connect their store in a single click. For social media, I worked with our marketing strategist to narrow the options down to Facebook, Instagram, and Pinterest based on user behaviour, cutting visual clutter and decision fatigue.</p>
       </div>
     </div>
 
     <figure style="margin: 0 0 32px; background: #F3F3F1"><video src="assets/video/Scene-1.webm" autoplay muted loop playsinline aria-label="Screen recording of the redesigned Bluumly signup flow" style="width: 100%; display: block"></video></figure>
 
-    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(min(480px, 100%), 1fr)); gap: 24px; margin-bottom: 32px">
+    <div style="display: flex; flex-wrap: wrap; gap: 16px 64px; padding: 56px 0; border-top: 1px solid #E7E7E4">
+      <h2 style="flex: 1 1 220px; margin: 0; font-family: 'JetBrains Mono', monospace; font-size: 13px; font-weight: 500; text-transform: uppercase; letter-spacing: 0.04em; color: #555555; padding-top: 6px">04 — AI-assisted workflow</h2>
+      <div style="flex: 999 1 520px; min-width: 0; max-width: 780px; display: flex; flex-direction: column; gap: 20px">
+        <p style="margin: 0; font-size: 19px; line-height: 1.65; color: #2A2A2A">Following my session with an outside designer, I brought his feedback directly into a working prototype using Figma Make. Rather than rebuilding the flow from scratch, I used AI to generate a refined iteration of the existing user flow — capturing the structural improvements quickly. From there, I took the core layout and idea as a foundation, then layered in Bluumly's branding guidelines and built out fully editable frames ready for handoff to our front-end developer.</p>
+      </div>
+    </div>
+
+    <div style="display: flex; flex-direction: column; gap: 24px; margin-bottom: 32px">
       <figure style="margin: 0; background: #F3F3F1"><img loading="lazy" src="assets/images/old_new.webp" alt="Comparison of the old and new 'Connect your social channels' screens in the Bluumly onboarding flow" style="width: 100%; display: block"></figure>
       <figure style="margin: 0; background: #F3F3F1"><video src="assets/video/Scene-2__2_.webm" autoplay muted loop playsinline aria-label="Screen recording of the Bluumly social channel connection flow" style="width: 100%; display: block"></video></figure>
     </div>
 
     <div style="display: flex; flex-wrap: wrap; gap: 16px 64px; padding: 56px 0; border-top: 1px solid #E7E7E4">
-      <h2 style="flex: 1 1 220px; margin: 0; font-family: 'JetBrains Mono', monospace; font-size: 13px; font-weight: 500; text-transform: uppercase; letter-spacing: 0.04em; color: #555555; padding-top: 6px">04 — Outcome</h2>
+      <h2 style="flex: 1 1 220px; margin: 0; font-family: 'JetBrains Mono', monospace; font-size: 13px; font-weight: 500; text-transform: uppercase; letter-spacing: 0.04em; color: #555555; padding-top: 6px">05 — Outcome</h2>
       <div style="flex: 999 1 520px; min-width: 0; max-width: 900px; display: flex; flex-direction: column; gap: 36px">
         <ul style="margin: 0; padding: 0; list-style: none; display: grid; grid-template-columns: repeat(auto-fit, minmax(min(320px, 100%), 1fr)); gap: 0 40px">
-          <li style="display: flex; flex-direction: column; gap: 10px; padding: 24px 0; border-top: 1px solid #0A0A0A"><span style="font-size: 56px; font-weight: 600; letter-spacing: -0.04em; line-height: 1; color: #2B4BFF">6 → 3</span><span style="font-size: 17px; line-height: 1.55; color: #2A2A2A">Signup steps, with the demo, separate password screen and manual store connection removed</span></li>
-          <li style="display: flex; flex-direction: column; gap: 10px; padding: 24px 0; border-top: 1px solid #0A0A0A"><span style="font-size: 56px; font-weight: 600; letter-spacing: -0.04em; line-height: 1; color: #2B4BFF">1-click</span><span style="font-size: 17px; line-height: 1.55; color: #2A2A2A">Store connection through Shopify OAuth</span></li>
-          <li style="display: flex; flex-direction: column; gap: 10px; padding: 24px 0; border-top: 1px solid #0A0A0A"><span style="font-size: 56px; font-weight: 600; letter-spacing: -0.04em; line-height: 1; color: #2B4BFF">7 → 3</span><span style="font-size: 17px; line-height: 1.55; color: #2A2A2A">Social platforms shown at once, the rest in a dropdown</span></li>
-          <li style="display: flex; flex-direction: column; gap: 10px; padding: 24px 0; border-top: 1px solid #0A0A0A"><span style="font-size: 56px; font-weight: 600; letter-spacing: -0.04em; line-height: 1; color: #2B4BFF">No nav</span><span style="font-size: 17px; line-height: 1.55; color: #2A2A2A">No exit points until signup is complete</span></li>
+          <li style="display: flex; flex-direction: column; gap: 10px; padding: 24px 0; border-top: 1px solid #0A0A0A"><span style="font-size: 56px; font-weight: 600; letter-spacing: -0.04em; line-height: 1; color: #2B4BFF">6 → 3</span><span style="font-size: 17px; line-height: 1.55; color: #2A2A2A">Cut the signup flow from 6 steps to 3, removing the demo redirect, separate password creation, and manual store connection screen</span></li>
+          <li style="display: flex; flex-direction: column; gap: 10px; padding: 24px 0; border-top: 1px solid #0A0A0A"><span style="font-size: 56px; font-weight: 600; letter-spacing: -0.04em; line-height: 1; color: #2B4BFF">1-click</span><span style="font-size: 17px; line-height: 1.55; color: #2A2A2A">Replaced manual store connection with one-click Shopify OAuth — matching how our actual users, Shopify store owners, already expect to sign in</span></li>
+          <li style="display: flex; flex-direction: column; gap: 10px; padding: 24px 0; border-top: 1px solid #0A0A0A"><span style="font-size: 56px; font-weight: 600; letter-spacing: -0.04em; line-height: 1; color: #2B4BFF">7 → 3</span><span style="font-size: 17px; line-height: 1.55; color: #2A2A2A">Narrowed visible social platform options from 7 to 3, moving the rest under a dropdown to reduce decision fatigue</span></li>
+          <li style="display: flex; flex-direction: column; gap: 10px; padding: 24px 0; border-top: 1px solid #0A0A0A"><span style="font-size: 56px; font-weight: 600; letter-spacing: -0.04em; line-height: 1; color: #2B4BFF">No nav</span><span style="font-size: 17px; line-height: 1.55; color: #2A2A2A">Stripped the nav bar until onboarding was complete, removing exit points before account creation</span></li>
         </ul>
-        <p style="margin: 0; font-size: 16px; line-height: 1.6; color: #2A2A2A; max-width: 70ch; font-size: 19px">Shipped. After launch, users stopped getting stuck creating an account and made it through to setting up their first campaign. Bluumly was pre-scale, so the goal was to remove friction before growth, not to move a metric.</p>
+        <p style="margin: 0; font-size: 16px; line-height: 1.6; color: #555555; max-width: 70ch">Bluumly was still pre-scale at the time of this redesign, so this wasn't about lifting a metric against existing volume — the priority was removing friction before growth, using screen recordings rather than usage data to guide the decisions above.</p>
       </div>
     </div>
 

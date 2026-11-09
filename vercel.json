@@ -10,7 +10,7 @@
     {
       "source": "/attribution-dashboard",
       "destination": "/#work",
-      "permanent": true
+      "permanent": false
     }
   ]
 }
