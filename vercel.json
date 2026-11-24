@@ -9,12 +9,12 @@
     },
     {
       "source": "/shutterplate",
-      "destination": "/#work",
+      "destination": "/",
       "permanent": false
     },
     {
       "source": "/attribution-dashboard",
-      "destination": "/#work",
+      "destination": "/",
       "permanent": false
     }
   ]
