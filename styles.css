@@ -950,7 +950,7 @@ button:focus-visible {
   gap: 16px;
 }
 
-/* --- Featured row: ShutterPlate + InBalance Soul, stacked --- */
+/* --- Featured row: InBalance Soul, stacked --- */
 .work-featured-row {
   display: flex;
   flex-direction: column;
@@ -1294,8 +1294,6 @@ button:focus-visible {
 #campaign-creator > .case-hero + .case-media img       { view-transition-name: cs-campaign; }
 .work-compact-card[href="attribution-dashboard.html"] .work-compact-img img,
 #attribution-dashboard > .case-hero + .case-media img  { view-transition-name: cs-attribution; }
-.work-featured[href="shutterplate.html"] .work-featured-img img,
-#shutterplate > .case-hero + .case-media img           { view-transition-name: cs-shutterplate; }
 .work-featured[href="inbalance-soul.html"] .work-featured-img img,
 .brand-hero img                                        { view-transition-name: cs-inbalance; }
 

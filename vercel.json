@@ -8,6 +8,11 @@
       "permanent": true
     },
     {
+      "source": "/shutterplate",
+      "destination": "/#work",
+      "permanent": false
+    },
+    {
       "source": "/attribution-dashboard",
       "destination": "/#work",
       "permanent": false
